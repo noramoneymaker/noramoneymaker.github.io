@@ -1,0 +1,194 @@
+1
+00:00:00,000 --> 00:00:03,020
+I don't know. I don't want to homework,
+banking.
+
+2
+00:00:03,220 --> 00:00:04,096
+No, no, no, no, no, no.
+
+3
+00:00:04,180 --> 00:00:05,860
+I got multi -account containers for all of
+that.
+
+4
+00:00:06,180 --> 00:00:07,020
+Don't ask me questions.
+
+5
+00:00:06,940 --> 00:00:09,956
+I'm just going to say they're trying to
+keep up with the Joneses and the
+
+6
+00:00:10,040 --> 00:00:12,920
+Chromes medium -based stuff.
+
+7
+00:00:13,500 --> 00:00:18,756
+Which I will say months ago, I think
+before we went on break, Chrome pushed
+
+8
+00:00:18,840 --> 00:00:22,520
+it. Like as in it's no longer optional.
+
+9
+00:00:23,480 --> 00:00:24,360
+No, no, it's out there.
+
+10
+00:00:24,520 --> 00:00:25,540
+Yeah, you have to pick one.
+
+11
+00:00:26,120 --> 00:00:27,196
+You pick a profile.
+
+12
+00:00:27,280 --> 00:00:32,876
+and to their credit when you change
+profiles like the whole browser changes
+
+13
+00:00:32,960 --> 00:00:37,616
+color and so i didn't actually test this
+on firefox because again i hate
+
+14
+00:00:37,700 --> 00:00:41,756
+profiles um so it might do this in firefox
+too that that would be kind
+
+15
+00:00:41,840 --> 00:00:44,996
+of cool honestly i like that touch it's a
+nice touch if you like profiles
+
+16
+00:00:45,080 --> 00:00:49,696
+but i don't and so you better believe the
+first time i saw the profile
+
+17
+00:00:49,780 --> 00:00:53,976
+window i was like oh my god how do you
+turn this off yeah no i don't
+
+18
+00:00:54,060 --> 00:00:59,006
+need this i don't need this of my life
+this is wrong um but the other
+
+19
+00:00:59,090 --> 00:01:02,506
+thing was i mentioned multi -account
+containers they added it to the browser
+
+20
+00:01:02,590 --> 00:01:08,856
+it's like it's part of the browser yeah
+this was uh a little scary
+
+21
+00:01:08,940 --> 00:01:15,496
+because i didn't know if it was going to
+break my containers when you like
+
+22
+00:01:15,580 --> 00:01:22,096
+when you when you brought them in uh but
+it did seem like the streams
+
+23
+00:01:22,180 --> 00:01:27,776
+did not get crossed seem to handle it okay
+Yeah, and it remembered the
+
+24
+00:01:27,860 --> 00:01:31,076
+cookies in those, so it kept me logged in.
+Nice.
+
+25
+00:01:31,160 --> 00:01:33,700
+That's sort of how it should work, I
+think. Right.
+
+26
+00:01:34,170 --> 00:01:37,790
+Well, but it went from extension to baked
+in.
+
+27
+00:01:37,910 --> 00:01:39,346
+So I think what they did was that.
+
+28
+00:01:39,430 --> 00:01:44,266
+I think they just took the extension and
+threw the code in the actual code
+
+29
+00:01:44,350 --> 00:01:48,136
+base. Yeah, so the configurations are
+still in the same place.
+
+30
+00:01:48,220 --> 00:01:51,020
+So it was able to reference all that, and
+the cookies were still there,
+
+31
+00:01:51,140 --> 00:01:54,460
+and everything just seemed to pick up
+where it left off. Yes.
+
+32
+00:01:54,880 --> 00:01:55,956
+So I appreciate that.
+
+33
+00:01:56,040 --> 00:02:02,716
+Except on the machine that I'm on right
+now, it refuses to pull down my
+
+34
+00:02:02,800 --> 00:02:04,500
+profiles or my containers.
+
+35
+00:02:06,130 --> 00:02:10,786
+So it's not syncing them between browsers
+is what you're saying?
+
+36
+00:02:10,870 --> 00:02:12,760
+You know what? Okay.
+
+37
+00:02:12,860 --> 00:02:15,100
+So newsflash. Yes.
+
+38
+00:02:15,220 --> 00:02:17,160
+Before I looked right now.
+
+39
+00:02:17,400 --> 00:02:21,920
+Yes, that was the case where it was like
+it had its own set of containers.
+
+40
+00:02:22,140 --> 00:02:26,536
+Cool. I guess I could just remake them and
+match them up.
+
+41
+00:02:26,620 --> 00:02:27,720
+That's annoying, but okay.
+
+42
+00:02:27,920 --> 00:02:29,840
+So I just left it. I didn't want to.

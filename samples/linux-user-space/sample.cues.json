@@ -1,0 +1,340 @@
+{
+ "cues": [
+  {
+   "i": 1,
+   "start": 0.0,
+   "end": 3.02,
+   "speaker": "SPEAKER_01",
+   "text": "I don't know. I don't want to homework, banking.",
+   "min_word_prob": 0.592
+  },
+  {
+   "i": 2,
+   "start": 3.22,
+   "end": 4.096,
+   "speaker": "SPEAKER_01",
+   "text": "No, no, no, no, no, no.",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 3,
+   "start": 4.18,
+   "end": 5.86,
+   "speaker": "SPEAKER_01",
+   "text": "I got multi -account containers for all of that.",
+   "min_word_prob": 0.985
+  },
+  {
+   "i": 4,
+   "start": 6.18,
+   "end": 7.02,
+   "speaker": "SPEAKER_01",
+   "text": "Don't ask me questions.",
+   "min_word_prob": 0.982
+  },
+  {
+   "i": 5,
+   "start": 6.94,
+   "end": 9.956,
+   "speaker": "SPEAKER_01",
+   "text": "I'm just going to say they're trying to keep up with the Joneses and the",
+   "min_word_prob": 0.919
+  },
+  {
+   "i": 6,
+   "start": 10.04,
+   "end": 12.92,
+   "speaker": "SPEAKER_01",
+   "text": "Chromes medium -based stuff.",
+   "min_word_prob": 0.683
+  },
+  {
+   "i": 7,
+   "start": 13.5,
+   "end": 18.756,
+   "speaker": "SPEAKER_01",
+   "text": "Which I will say months ago, I think before we went on break, Chrome pushed",
+   "min_word_prob": 0.611
+  },
+  {
+   "i": 8,
+   "start": 18.84,
+   "end": 22.52,
+   "speaker": "SPEAKER_01",
+   "text": "it. Like as in it's no longer optional.",
+   "min_word_prob": 0.894
+  },
+  {
+   "i": 9,
+   "start": 23.48,
+   "end": 24.36,
+   "speaker": "SPEAKER_01",
+   "text": "No, no, it's out there.",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 10,
+   "start": 24.52,
+   "end": 25.54,
+   "speaker": "SPEAKER_01",
+   "text": "Yeah, you have to pick one.",
+   "min_word_prob": 0.997
+  },
+  {
+   "i": 11,
+   "start": 26.12,
+   "end": 27.196,
+   "speaker": "SPEAKER_01",
+   "text": "You pick a profile.",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 12,
+   "start": 27.28,
+   "end": 32.876,
+   "speaker": "SPEAKER_01",
+   "text": "and to their credit when you change profiles like the whole browser changes",
+   "min_word_prob": 0.089
+  },
+  {
+   "i": 13,
+   "start": 32.96,
+   "end": 37.616,
+   "speaker": "SPEAKER_01",
+   "text": "color and so i didn't actually test this on firefox because again i hate",
+   "min_word_prob": 0.114
+  },
+  {
+   "i": 14,
+   "start": 37.7,
+   "end": 41.756,
+   "speaker": "SPEAKER_01",
+   "text": "profiles um so it might do this in firefox too that that would be kind",
+   "min_word_prob": 0.938
+  },
+  {
+   "i": 15,
+   "start": 41.84,
+   "end": 44.996,
+   "speaker": "SPEAKER_01",
+   "text": "of cool honestly i like that touch it's a nice touch if you like profiles",
+   "min_word_prob": 0.986
+  },
+  {
+   "i": 16,
+   "start": 45.08,
+   "end": 49.696,
+   "speaker": "SPEAKER_01",
+   "text": "but i don't and so you better believe the first time i saw the profile",
+   "min_word_prob": 0.996
+  },
+  {
+   "i": 17,
+   "start": 49.78,
+   "end": 53.976,
+   "speaker": "SPEAKER_01",
+   "text": "window i was like oh my god how do you turn this off yeah no i don't",
+   "min_word_prob": 0.768
+  },
+  {
+   "i": 18,
+   "start": 54.06,
+   "end": 59.006,
+   "speaker": "SPEAKER_01",
+   "text": "need this i don't need this of my life this is wrong um but the other",
+   "min_word_prob": 0.288
+  },
+  {
+   "i": 19,
+   "start": 59.09,
+   "end": 62.506,
+   "speaker": "SPEAKER_01",
+   "text": "thing was i mentioned multi -account containers they added it to the browser",
+   "min_word_prob": 0.824
+  },
+  {
+   "i": 20,
+   "start": 62.59,
+   "end": 68.856,
+   "speaker": "SPEAKER_01",
+   "text": "it's like it's part of the browser yeah this was uh a little scary",
+   "min_word_prob": 0.501
+  },
+  {
+   "i": 21,
+   "start": 68.94,
+   "end": 75.496,
+   "speaker": "SPEAKER_01",
+   "text": "because i didn't know if it was going to break my containers when you like",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 22,
+   "start": 75.58,
+   "end": 82.096,
+   "speaker": "SPEAKER_01",
+   "text": "when you when you brought them in uh but it did seem like the streams",
+   "min_word_prob": 0.727
+  },
+  {
+   "i": 23,
+   "start": 82.18,
+   "end": 87.776,
+   "speaker": "SPEAKER_01",
+   "text": "did not get crossed seem to handle it okay Yeah, and it remembered the",
+   "min_word_prob": 0.372
+  },
+  {
+   "i": 24,
+   "start": 87.86,
+   "end": 91.076,
+   "speaker": "SPEAKER_01",
+   "text": "cookies in those, so it kept me logged in. Nice.",
+   "min_word_prob": 0.423
+  },
+  {
+   "i": 25,
+   "start": 91.16,
+   "end": 93.7,
+   "speaker": "SPEAKER_01",
+   "text": "That's sort of how it should work, I think. Right.",
+   "min_word_prob": 0.988
+  },
+  {
+   "i": 26,
+   "start": 94.17,
+   "end": 97.79,
+   "speaker": "SPEAKER_01",
+   "text": "Well, but it went from extension to baked in.",
+   "min_word_prob": 0.495
+  },
+  {
+   "i": 27,
+   "start": 97.91,
+   "end": 99.346,
+   "speaker": "SPEAKER_01",
+   "text": "So I think what they did was that.",
+   "min_word_prob": 0.803
+  },
+  {
+   "i": 28,
+   "start": 99.43,
+   "end": 104.266,
+   "speaker": "SPEAKER_01",
+   "text": "I think they just took the extension and threw the code in the actual code",
+   "min_word_prob": 0.895
+  },
+  {
+   "i": 29,
+   "start": 104.35,
+   "end": 108.136,
+   "speaker": "SPEAKER_01",
+   "text": "base. Yeah, so the configurations are still in the same place.",
+   "min_word_prob": 0.784
+  },
+  {
+   "i": 30,
+   "start": 108.22,
+   "end": 111.02,
+   "speaker": "SPEAKER_01",
+   "text": "So it was able to reference all that, and the cookies were still there,",
+   "min_word_prob": 0.999
+  },
+  {
+   "i": 31,
+   "start": 111.14,
+   "end": 114.46,
+   "speaker": "SPEAKER_01",
+   "text": "and everything just seemed to pick up where it left off. Yes.",
+   "min_word_prob": 0.833
+  },
+  {
+   "i": 32,
+   "start": 114.88,
+   "end": 115.956,
+   "speaker": "SPEAKER_01",
+   "text": "So I appreciate that.",
+   "min_word_prob": 0.953
+  },
+  {
+   "i": 33,
+   "start": 116.04,
+   "end": 122.716,
+   "speaker": "SPEAKER_01",
+   "text": "Except on the machine that I'm on right now, it refuses to pull down my",
+   "min_word_prob": 0.956
+  },
+  {
+   "i": 34,
+   "start": 122.8,
+   "end": 124.5,
+   "speaker": "SPEAKER_01",
+   "text": "profiles or my containers.",
+   "min_word_prob": 0.922
+  },
+  {
+   "i": 35,
+   "start": 126.13,
+   "end": 130.786,
+   "speaker": "SPEAKER_01",
+   "text": "So it's not syncing them between browsers is what you're saying?",
+   "min_word_prob": 0.935
+  },
+  {
+   "i": 36,
+   "start": 130.87,
+   "end": 132.76,
+   "speaker": "SPEAKER_01",
+   "text": "You know what? Okay.",
+   "min_word_prob": 0.672
+  },
+  {
+   "i": 37,
+   "start": 132.86,
+   "end": 135.1,
+   "speaker": "SPEAKER_01",
+   "text": "So newsflash. Yes.",
+   "min_word_prob": 0.929
+  },
+  {
+   "i": 38,
+   "start": 135.22,
+   "end": 137.16,
+   "speaker": "SPEAKER_01",
+   "text": "Before I looked right now.",
+   "min_word_prob": 0.978
+  },
+  {
+   "i": 39,
+   "start": 137.4,
+   "end": 141.92,
+   "speaker": "SPEAKER_01",
+   "text": "Yes, that was the case where it was like it had its own set of containers.",
+   "min_word_prob": 0.923
+  },
+  {
+   "i": 40,
+   "start": 142.14,
+   "end": 146.536,
+   "speaker": "SPEAKER_01",
+   "text": "Cool. I guess I could just remake them and match them up.",
+   "min_word_prob": 0.995
+  },
+  {
+   "i": 41,
+   "start": 146.62,
+   "end": 147.72,
+   "speaker": "SPEAKER_01",
+   "text": "That's annoying, but okay.",
+   "min_word_prob": 0.977
+  },
+  {
+   "i": 42,
+   "start": 147.92,
+   "end": 149.84,
+   "speaker": "SPEAKER_01",
+   "text": "So I just left it. I didn't want to.",
+   "min_word_prob": 0.999
+  }
+ ]
+}

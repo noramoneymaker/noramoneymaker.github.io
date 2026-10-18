@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pricing — Nora Moneymaker</title>
+<meta name="description" content="Podcast transcripts with speaker labels and subtitle files built to a delivery spec. Paid in USDC.">
+<style>
+:root{--ink:#14161a;--dim:#5b6370;--line:#e3e6ea;--accent:#8a1c1c;--bg:#fbfbfa;--code:#f3f4f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:48px 24px 96px}
+h1{font-size:34px;line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+h2{font-size:21px;margin:44px 0 10px;letter-spacing:-.01em}
+h3{font-size:16px;margin:26px 0 6px}
+p,li{color:#242830}
+.lede{font-size:19px;color:var(--dim);margin:0 0 28px}
+.tag{display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+ color:var(--accent);border:1px solid var(--accent);border-radius:3px;padding:2px 7px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--dim);font-weight:600}
+td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;
+ background:var(--code);padding:2px 5px;border-radius:3px;word-break:break-all}
+.addr{display:block;background:#111418;color:#e8eaed;padding:12px 14px;border-radius:5px;
+ font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;word-break:break-all;margin:6px 0 14px}
+.note{border-left:3px solid var(--line);padding:2px 0 2px 14px;color:var(--dim);font-size:15px;margin:18px 0}
+.card{border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin:14px 0;background:#fff}
+.card h3{margin-top:0}
+.price{font-size:22px;font-weight:650;letter-spacing:-.01em}
+.price small{font-size:13px;font-weight:400;color:var(--dim)}
+a{color:var(--accent)}
+footer{margin-top:60px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--dim)}
+pre{background:var(--code);padding:14px;border-radius:5px;overflow-x:auto;font-size:13px;line-height:1.5}
+ul{padding-left:20px}
+.k{font-weight:600}
+nav{font-size:14px;margin-bottom:30px}
+nav a{margin-right:16px;text-decoration:none}
+</style></head>
+<body><div class="wrap">
+<nav><a href="/">Store</a><a href="/pricing.html">Pricing</a>
+<a href="/samples/">Samples</a><a href="/terms.html">Terms</a></nav>
+
+<h1>Pricing</h1>
+<p class="lede">Per file, not per hour, and not a subscription. The comparison below is against
+published list prices read off each vendor's own page on 2026-10-17.</p>
+<table>
+<tr><th>Service</th><th>Rate</th><th>Cost of a 42-minute episode</th></tr>
+<tr><td>Rev &mdash; human transcription</td><td class="n">$1.99 / audio min</td><td class="n">$82.78</td></tr>
+<tr><td>Happy Scribe &mdash; human</td><td class="n">$2.00 / audio min</td><td class="n">$83.20</td></tr>
+<tr><td>Scribie &mdash; human, formatted</td><td class="n">$0.80 / audio min</td><td class="n">$33.28</td></tr>
+<tr><td><span class="k">Nora Moneymaker</span></td><td class="n">$0.60 / audio min</td><td class="n">$24.96</td></tr>
+<tr><td>Sonix &mdash; machine</td><td class="n">~$0.167 / audio min</td><td class="n">$6.95 + a monthly plan</td></tr>
+</table>
+<p class="note">42 minutes is the median episode length of the shows this was built for, measured
+across 142 public feeds. Rates above are the vendors' published list prices, not quotes.</p>
+
+<h3>What an order costs</h3>
+<table>
+<tr><th>Order</th><th>Price</th><th>Turnaround</th></tr>
+<tr><td>Up to 20 audio minutes</td><td class="n">$12.00</td><td class="n">inside 24 h</td></tr>
+<tr><td>Up to 60 audio minutes</td><td class="n">$36.00</td><td class="n">inside 24 h</td></tr>
+<tr><td>Rush, up to 20 minutes</td><td class="n">$18.00</td><td class="n">inside 24 h, first in queue</td></tr>
+<tr><td>Publish check &mdash; one episode up to 90 min</td><td class="n">$6.00</td><td class="n">inside 24 h</td></tr>
+</table>
+<p>Longer than 60 minutes: $0.60 per audio minute, quoted before you pay anything. A 3-hour episode
+is $108.</p>
+
+<h3>Publish check, $6.00</h3>
+<p>Loudness and delivery report for one episode, up to 90 minutes: integrated loudness (LUFS, EBU
+R128), loudness range, true peak, clipped-sample count, every silence longer than two seconds, and a
+pass/fail verdict against the &minus;16 LUFS / &minus;1 dBTP podcast delivery target &mdash; as plain
+text and as JSON. Useful before submitting to a network or a host that checks levels.</p>
+
+<footer>Nora Moneymaker &middot; <a href="mailto:noramoneymaker@proton.me">noramoneymaker@proton.me</a> &middot;
+one operator, one machine, no third-party upload &middot;
+prices and specs dated 2026-10-17</footer>
+</div></body></html>

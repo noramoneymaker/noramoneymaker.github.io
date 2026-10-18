@@ -1,0 +1,268 @@
+{
+ "cues": [
+  {
+   "i": 1,
+   "start": 0.0,
+   "end": 2.72,
+   "speaker": "SPEAKER_01",
+   "text": "Yeah. Is the bottom going to start pushing?",
+   "min_word_prob": 0.538
+  },
+  {
+   "i": 2,
+   "start": 3.0,
+   "end": 5.22,
+   "speaker": "SPEAKER_01",
+   "text": "Is there going to be a force pushing back?",
+   "min_word_prob": 0.677
+  },
+  {
+   "i": 3,
+   "start": 5.42,
+   "end": 7.22,
+   "speaker": "SPEAKER_01",
+   "text": "It's probably the middle one. It's probably the middle one.",
+   "min_word_prob": 0.815
+  },
+  {
+   "i": 4,
+   "start": 7.38,
+   "end": 8.22,
+   "speaker": "SPEAKER_01",
+   "text": "It's tough, isn't it?",
+   "min_word_prob": 0.992
+  },
+  {
+   "i": 5,
+   "start": 8.04,
+   "end": 11.386,
+   "speaker": "SPEAKER_01",
+   "text": "Because if you're pushing down, and then there is going to be an opposing",
+   "min_word_prob": 0.997
+  },
+  {
+   "i": 6,
+   "start": 11.47,
+   "end": 15.26,
+   "speaker": "SPEAKER_01",
+   "text": "force pushing back, where is it going to spill out? Yeah.",
+   "min_word_prob": 0.798
+  },
+  {
+   "i": 7,
+   "start": 16.62,
+   "end": 17.54,
+   "speaker": "SPEAKER_01",
+   "text": "Or is it the top one?",
+   "min_word_prob": 0.779
+  },
+  {
+   "i": 8,
+   "start": 17.68,
+   "end": 19.68,
+   "speaker": "SPEAKER_01",
+   "text": "That's one of Newton's laws, isn't it? Yeah.",
+   "min_word_prob": 0.975
+  },
+  {
+   "i": 9,
+   "start": 19.82,
+   "end": 22.72,
+   "speaker": "SPEAKER_01",
+   "text": "But every action, there's a reaction.",
+   "min_word_prob": 0.968
+  },
+  {
+   "i": 10,
+   "start": 23.08,
+   "end": 24.82,
+   "speaker": "SPEAKER_01",
+   "text": "I can't remember what one. I think it's the fourth law.",
+   "min_word_prob": 0.939
+  },
+  {
+   "i": 11,
+   "start": 24.94,
+   "end": 29.016,
+   "speaker": "SPEAKER_01",
+   "text": "If you know it, if I learned that once, I'd know it forever, and I'd know",
+   "min_word_prob": 0.781
+  },
+  {
+   "i": 12,
+   "start": 29.1,
+   "end": 33.42,
+   "speaker": "SPEAKER_01",
+   "text": "the reason why. But I've just never learned it. Laws.",
+   "min_word_prob": 0.852
+  },
+  {
+   "i": 13,
+   "start": 39.47,
+   "end": 43.2,
+   "speaker": "SPEAKER_01",
+   "text": "Let's see this quickly Why the",
+   "min_word_prob": 0.01
+  },
+  {
+   "i": 14,
+   "start": 45.26,
+   "end": 51.986,
+   "speaker": "SPEAKER_01",
+   "text": "fuck wouldn't it just give me The first law or second law For every",
+   "min_word_prob": 0.069
+  },
+  {
+   "i": 15,
+   "start": 52.07,
+   "end": 55.84,
+   "speaker": "MIXED",
+   "text": "Third law Hello Pickle",
+   "min_word_prob": 0.599
+  },
+  {
+   "i": 16,
+   "start": 59.42,
+   "end": 61.4,
+   "speaker": "SPEAKER_01",
+   "text": "Top middle or bottom",
+   "min_word_prob": 0.66
+  },
+  {
+   "i": 17,
+   "start": 64.04,
+   "end": 70.516,
+   "speaker": "SPEAKER_01",
+   "text": "I personally Think that there is going to be An opposing force to the pressure",
+   "min_word_prob": 0.236
+  },
+  {
+   "i": 18,
+   "start": 70.6,
+   "end": 75.416,
+   "speaker": "SPEAKER_01",
+   "text": "Going down so there might Fuck knows I think it's middle It's got to be",
+   "min_word_prob": 0.428
+  },
+  {
+   "i": 19,
+   "start": 75.5,
+   "end": 80.22,
+   "speaker": "SPEAKER_01",
+   "text": "the middle It could be the bottom though yeah",
+   "min_word_prob": 0.087
+  },
+  {
+   "i": 20,
+   "start": 83.18,
+   "end": 90.11,
+   "speaker": "SPEAKER_01",
+   "text": "where is the most i'll tell you where it is the",
+   "min_word_prob": 0.642
+  },
+  {
+   "i": 21,
+   "start": 91.66,
+   "end": 93.38,
+   "speaker": "SPEAKER_01",
+   "text": "pressure coming in the",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 22,
+   "start": 95.16,
+   "end": 96.5,
+   "speaker": "SPEAKER_01",
+   "text": "hole at the top not",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 23,
+   "start": 98.21,
+   "end": 103.576,
+   "speaker": "SPEAKER_01",
+   "text": "the top hole the top of the barrel where the pressure's coming you've said",
+   "min_word_prob": 0.938
+  },
+  {
+   "i": 24,
+   "start": 103.66,
+   "end": 108.736,
+   "speaker": "SPEAKER_01",
+   "text": "every hole so far i never said the top arm what i'm saying is the hole",
+   "min_word_prob": 0.557
+  },
+  {
+   "i": 25,
+   "start": 108.82,
+   "end": 110.74,
+   "speaker": "SPEAKER_01",
+   "text": "where the pressure's coming in see",
+   "min_word_prob": 0.989
+  },
+  {
+   "i": 26,
+   "start": 114.47,
+   "end": 120.76,
+   "speaker": "SPEAKER_01",
+   "text": "that's called lateral thinking see what one is it so",
+   "min_word_prob": 0.985
+  },
+  {
+   "i": 27,
+   "start": 123.21,
+   "end": 128.356,
+   "speaker": "SPEAKER_01",
+   "text": "and this is i had to do this typical jack gpt right so i said water tank",
+   "min_word_prob": 0.872
+  },
+  {
+   "i": 28,
+   "start": 128.44,
+   "end": 132.016,
+   "speaker": "SPEAKER_01",
+   "text": "three holes top middle and bottom which hole would have the most pressure",
+   "min_word_prob": 0.946
+  },
+  {
+   "i": 29,
+   "start": 132.1,
+   "end": 136.476,
+   "speaker": "SPEAKER_01",
+   "text": "of which is the bottom hole has the highest pressure and then i said i",
+   "min_word_prob": 0.237
+  },
+  {
+   "i": 30,
+   "start": 136.56,
+   "end": 139.786,
+   "speaker": "SPEAKER_01",
+   "text": "think it's the middle hole you may be thinking of which hole makes the",
+   "min_word_prob": 0.77
+  },
+  {
+   "i": 31,
+   "start": 139.87,
+   "end": 143.506,
+   "speaker": "SPEAKER_01",
+   "text": "water travel furthest in which case the middle hole can indeed be the answer",
+   "min_word_prob": 0.968
+  },
+  {
+   "i": 32,
+   "start": 143.59,
+   "end": 148.186,
+   "speaker": "SPEAKER_01",
+   "text": "i could go actually i think i think it's the top hole oh well have you",
+   "min_word_prob": 0.757
+  },
+  {
+   "i": 33,
+   "start": 148.27,
+   "end": 149.61,
+   "speaker": "SPEAKER_01",
+   "text": "seen that that is it family guy",
+   "min_word_prob": 0.445
+  }
+ ]
+}

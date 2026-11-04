@@ -43,8 +43,10 @@ nav a{margin-right:16px;text-decoration:none}
 
 <h1>How accurate is this, really</h1>
 <p class="lede">One number a buyer can check, on material a buyer can also listen to. Both
-measurements below were run on this machine on 2026-11-03, on the exact weights and settings an
-order runs, and the audio and the scoring script are named so they can be repeated.</p>
+measurements below were run on this machine, on the exact weights and settings an
+order runs, and the audio and the scoring script are named so they can be repeated.
+The accuracy table was re-run on 2026-11-04 after one decoder setting changed; that run is what
+is published here.</p>
 
 <h2>The two anchors</h2>
 <table>
@@ -53,7 +55,7 @@ order runs, and the audio and the scoring script are named so they can be repeat
     <td class="n">209</td><td class="n">2</td><td class="n"><span class="k">0.96%</span></td></tr>
 <tr><td>LibriVox <i>Alice in Wonderland</i> ch. VII, five human readers, 14&nbsp;min&nbsp;31&nbsp;s,
     scored against the published Project Gutenberg text</td>
-    <td class="n">2,336</td><td class="n">69</td><td class="n"><span class="k">2.95%</span></td></tr>
+    <td class="n">2,344</td><td class="n">72</td><td class="n"><span class="k">3.07%</span></td></tr>
 </table>
 <p class="note">The first is the easy case and on its own it flatters: synthetic audio has no room,
 no crosstalk and no reader deciding to sing. The second is a real human recording, scored with no
@@ -64,16 +66,16 @@ region cherry-picked. It is the number worth judging this on.</p>
 <tr><th>tenth of the file</th><th class="n">1</th><th class="n">2</th><th class="n">3</th>
     <th class="n">4</th><th class="n">5</th><th class="n">6</th><th class="n">7</th>
     <th class="n">8</th><th class="n">9</th><th class="n">10</th></tr>
-<tr><td>word error rate</td><td class="n">0.9</td><td class="n">0.0</td><td class="n">0.0</td>
-    <td class="n">0.4</td><td class="n">11.1</td><td class="n">1.7</td><td class="n">2.6</td>
+<tr><td>word error rate</td><td class="n">1.3</td><td class="n">0.0</td><td class="n">0.0</td>
+    <td class="n">0.4</td><td class="n">11.1</td><td class="n">0.9</td><td class="n">1.7</td>
     <td class="n">1.3</td><td class="n">0.9</td><td class="n">1.3</td></tr>
 </table>
-<p>Nine tenths of the file are at or under 2.6% and seven at or under 1.3%. The one bad tenth is a
+<p>Nine tenths of the file are at or under 1.7% and seven at or under 1.3%. The one bad tenth is a
 specific, explainable thing: the Dormouse's song. The reader <b>sings</b> &ldquo;Twinkle, twinkle,
 little bat&rdquo;, the recogniser returns the tune as words, and the alignment shifts around it. A
 spoken episode does not contain that failure mode. An episode with a sung jingle or a music bed
 under the voice might, and that is what the QA note is for.</p>
-<p>Three of the 69 errors are spelling variants rather than mistranscriptions
+<p>Three of the 72 errors are spelling variants rather than mistranscriptions
 (<i>quarrelled</i>/<i>quarreled</i>, <i>arm chair</i>/<i>armchair</i>, <i>fellows</i>/<i>fellas</i>),
 and the opening announcement line is not in the book text, so it scores as an insertion.</p>
 
@@ -85,12 +87,31 @@ on the same 14 minutes, same script, same device, same scoring &mdash; one varia
 <tr><th>Weights</th><th class="n">Words</th><th class="n">WER</th><th class="n">Time for 14.5 min of audio</th></tr>
 <tr><td>large-v3, int8, CPU</td><td class="n">2,350</td><td class="n">3.66%</td>
     <td class="n">348.5 s</td></tr>
-<tr><td><span class="k">large-v3-turbo, int8, CPU</span> &mdash; what ships now</td><td class="n">2,336</td>
-    <td class="n"><span class="k">2.95%</span></td><td class="n">118.4 s</td></tr>
+<tr><td><span class="k">large-v3-turbo, int8, CPU</span> &mdash; what ships now</td><td class="n">2,344</td>
+    <td class="n"><span class="k">3.07%</span></td><td class="n">136.0 s</td></tr>
 </table>
-<p>The cheaper, faster weights are not the worse ones on this file &mdash; they are 0.7 points better
-at 2.9 times the speed. The number on the store page is the turbo number because turbo is what
-runs.</p>
+<p>The cheaper, faster weights are not the worse ones on this file &mdash; under the older setting they
+were 0.7 points better at 2.9 times the speed, and they are the weights that ship. (The large-v3 row
+was measured before the 2026-11-04 setting change and was not re-run; it is there to show the weight
+swap did not cost accuracy, not to be compared against the new row.)</p>
+
+<h2>The setting that changed on 2026-11-04, and what it cost</h2>
+<p>The decoder has a switch called <code>condition_on_previous_text</code>. With it off, every
+30-second window is transcribed cold: the words are right and the formatting is gone &mdash;
+interior passages come back lowercase with no full stops, which reads like raw machine output.
+With it on, the transcript is capitalised and punctuated the way a person would write it. Measured
+on the same 14 minutes, same weights, same machine, one variable:</p>
+<table>
+<tr><th>Setting</th><th class="n">Words</th><th class="n">Errors</th><th class="n">WER</th><th class="n">Time</th></tr>
+<tr><td>conditioning off</td><td class="n">2,336</td><td class="n">69</td><td class="n">2.95%</td><td class="n">118.4 s</td></tr>
+<tr><td><span class="k">conditioning on &mdash; what ships</span></td><td class="n">2,344</td>
+    <td class="n">72</td><td class="n"><span class="k">3.07%</span></td><td class="n">136.0 s</td></tr>
+</table>
+<p>Three errors across 2,344 words, which is noise, and it buys punctuation. Paying 0.12 points of
+WER for a transcript a person can read without re-punctuating it in their head is the right trade
+for a deliverable, so the published number moved up rather than staying at the prettier one. The
+old 2.95% row is left above because a store that silently improves its own headline number when
+the method changes is not one you should believe.</p>
 
 <h2>What the number does not cover</h2>
 <p>Room noise, phone lines, crosstalk, strong accents, overlapping speakers and music beds all cost

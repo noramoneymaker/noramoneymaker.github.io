@@ -1,154 +1,137 @@
 WEBVTT
 
-00:00:00.000 --> 00:00:03.020
-I don't know. I don't want to homework,
-banking.
+00:00:00.000 --> 00:00:02.440
+the human was in the loop.
 
-00:00:03.220 --> 00:00:04.096
-No, no, no, no, no, no.
+00:00:02.580 --> 00:00:08.526
+The human was one of the humans that I
+trust when it comes to stuff like
 
-00:00:04.180 --> 00:00:05.860
-I got multi -account containers for all of
-that.
+00:00:08.610 --> 00:00:10.136
+this. We would call
 
-00:00:06.180 --> 00:00:07.020
-Don't ask me questions.
+00:00:10.220 --> 00:00:13.240
+that person the subject matter expert in
+this case,
 
-00:00:06.940 --> 00:00:09.956
-I'm just going to say they're trying to
-keep up with the Joneses and the
+00:00:13.640 --> 00:00:16.666
+I'm just going to say. Exactly.
 
-00:00:10.040 --> 00:00:12.920
-Chromes medium -based stuff.
+00:00:16.750 --> 00:00:23.020
+And my refrain has been a good
+practitioner is who you want
 
-00:00:13.500 --> 00:00:18.756
-Which I will say months ago, I think
-before we went on break, Chrome pushed
+00:00:23.490 --> 00:00:26.290
+behind the vibing, right?
 
-00:00:18.840 --> 00:00:22.520
-it. Like as in it's no longer optional.
+00:00:26.450 --> 00:00:28.970
+But in this case, I do have to be clear,
+right?
 
-00:00:23.480 --> 00:00:24.360
-No, no, it's out there.
+00:00:29.090 --> 00:00:31.730
+This is not vibe coding.
 
-00:00:24.520 --> 00:00:25.540
-Yeah, you have to pick one.
+00:00:33.140 --> 00:00:37.170
+This is LLM assisting, essentially.
 
-00:00:26.120 --> 00:00:27.196
-You pick a profile.
+00:00:37.770 --> 00:00:39.550
+And there's a huge difference.
 
-00:00:27.280 --> 00:00:32.876
-and to their credit when you change
-profiles like the whole browser changes
+00:00:39.790 --> 00:00:41.710
+I don't know if I defined it on this show
+or not.
 
-00:00:32.960 --> 00:00:37.616
-color and so i didn't actually test this
-on firefox because again i hate
+00:00:41.810 --> 00:00:47.860
+But the difference is I would vibe code
+something into the kernel, right?
 
-00:00:37.700 --> 00:00:41.756
-profiles um so it might do this in firefox
-too that that would be kind
+00:00:48.080 --> 00:00:53.576
+Like, I have no clue what good C code
+looks like in the first place to
 
-00:00:41.840 --> 00:00:44.996
-of cool honestly i like that touch it's a
-nice touch if you like profiles
+00:00:53.660 --> 00:00:58.056
+be like, and I have no real frame of
+reference for any part of the kernel
 
-00:00:45.080 --> 00:00:49.696
-but i don't and so you better believe the
-first time i saw the profile
+00:00:58.140 --> 00:01:01.440
+itself. So me being like, we can fix that.
 
-00:00:49.780 --> 00:00:53.976
-window i was like oh my god how do you
-turn this off yeah no i don't
+00:01:01.840 --> 00:01:04.636
+Just tippa -tappa, tippa -tappa, tippa
+-tappa, let an AI kind of do its thing
 
-00:00:54.060 --> 00:00:59.006
-need this i don't need this of my life
-this is wrong um but the other
+00:01:04.720 --> 00:01:06.640
+or whatever. And it's like, here you go.
+Here's your code.
 
-00:00:59.090 --> 00:01:02.506
-thing was i mentioned multi -account
-containers they added it to the browser
+00:01:06.760 --> 00:01:09.570
+And I'd be like, yeah, looks good.
 
-00:01:02.590 --> 00:01:08.856
-it's like it's part of the browser yeah
-this was uh a little scary
+00:01:09.730 --> 00:01:11.770
+Just throw that in there. Yeah.
 
-00:01:08.940 --> 00:01:15.496
-because i didn't know if it was going to
-break my containers when you like
+00:01:12.550 --> 00:01:13.730
+That's vibe coding.
 
-00:01:15.580 --> 00:01:22.096
-when you when you brought them in uh but
-it did seem like the streams
+00:01:14.350 --> 00:01:19.230
+Whereas LLM assisted or LLM assisting is
+kind of the same thing.
 
-00:01:22.180 --> 00:01:27.776
-did not get crossed seem to handle it okay
-Yeah, and it remembered the
+00:01:19.370 --> 00:01:24.136
+But the huge difference is the
+practitioner sitting there that is able to
 
-00:01:27.860 --> 00:01:31.076
-cookies in those, so it kept me logged in.
-Nice.
+00:01:24.220 --> 00:01:28.696
+tell good code from bad code that is able
+to tell this fits, this doesn't
 
-00:01:31.160 --> 00:01:33.700
-That's sort of how it should work, I
-think. Right.
+00:01:28.780 --> 00:01:30.240
+fit. This is performant.
 
-00:01:34.170 --> 00:01:37.790
-Well, but it went from extension to baked
-in.
+00:01:30.340 --> 00:01:31.220
+This is not performant.
 
-00:01:37.910 --> 00:01:39.346
-So I think what they did was that.
+00:01:32.420 --> 00:01:35.416
+And I think before you even get to that
+point where it's giving you the
 
-00:01:39.430 --> 00:01:44.266
-I think they just took the extension and
-threw the code in the actual code
+00:01:35.500 --> 00:01:40.176
+output of what the code looks like, that
+practitioner, operator, or whatever
 
-00:01:44.350 --> 00:01:48.136
-base. Yeah, so the configurations are
-still in the same place.
+00:01:40.260 --> 00:01:45.296
+we're going to call them, they're the ones
+that are feeding the right context
 
-00:01:48.220 --> 00:01:51.020
-So it was able to reference all that, and
-the cookies were still there,
+00:01:45.380 --> 00:01:46.680
+to the AI.
 
-00:01:51.140 --> 00:01:54.460
-and everything just seemed to pick up
-where it left off. Yes.
+00:01:46.960 --> 00:01:48.740
+And I think that's super important
 
-00:01:54.880 --> 00:01:55.956
-So I appreciate that.
+00:01:50.820 --> 00:01:55.160
+because you didn't just tell it to go
+write me a Linux kernel.
 
-00:01:56.040 --> 00:02:02.716
-Except on the machine that I'm on right
-now, it refuses to pull down my
+00:01:55.680 --> 00:02:00.916
+He said, go fix this specific part in a
+certain way with these types of
 
-00:02:02.800 --> 00:02:04.500
-profiles or my containers.
+00:02:01.000 --> 00:02:04.980
+parameters and do all of this.
 
-00:02:06.130 --> 00:02:10.786
-So it's not syncing them between browsers
-is what you're saying?
+00:02:05.160 --> 00:02:11.620
+So he filled in the gaps that it could
+have easily went to.
 
-00:02:10.870 --> 00:02:12.760
-You know what? Okay.
+00:02:12.380 --> 00:02:19.246
+And then the output it gave is probably a
+lot more concise
 
-00:02:12.860 --> 00:02:15.100
-So newsflash. Yes.
+00:02:19.330 --> 00:02:25.850
+and going to be a better quality product,
+I'm going to say. Yeah.
 
-00:02:15.220 --> 00:02:17.160
-Before I looked right now.
-
-00:02:17.400 --> 00:02:21.920
-Yes, that was the case where it was like
-it had its own set of containers.
-
-00:02:22.140 --> 00:02:26.536
-Cool. I guess I could just remake them and
-match them up.
-
-00:02:26.620 --> 00:02:27.720
-That's annoying, but okay.
-
-00:02:27.920 --> 00:02:29.840
-So I just left it. I didn't want to.
+00:02:26.150 --> 00:02:29.970
+Well, I mean, Linus is notoriously hard on
+control.

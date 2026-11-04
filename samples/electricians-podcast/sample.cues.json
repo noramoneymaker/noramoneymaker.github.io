@@ -3,266 +3,370 @@
   {
    "i": 1,
    "start": 0.0,
-   "end": 2.72,
+   "end": 3.2,
    "speaker": "SPEAKER_01",
-   "text": "Yeah. Is the bottom going to start pushing?",
-   "min_word_prob": 0.538
+   "text": "Yeah, we have, but it's been busy. It has been busy. It's been crazy.",
+   "min_word_prob": 0.39
   },
   {
    "i": 2,
-   "start": 3.0,
-   "end": 5.22,
+   "start": 3.56,
+   "end": 8.346,
    "speaker": "SPEAKER_01",
-   "text": "Is there going to be a force pushing back?",
-   "min_word_prob": 0.677
+   "text": "And like I said on the last episode, CERN is back on now, so time is",
+   "min_word_prob": 0.979
   },
   {
    "i": 3,
-   "start": 5.42,
-   "end": 7.22,
+   "start": 8.43,
+   "end": 9.27,
    "speaker": "SPEAKER_01",
-   "text": "It's probably the middle one. It's probably the middle one.",
-   "min_word_prob": 0.815
+   "text": "speeding up.",
+   "min_word_prob": 0.999
   },
   {
    "i": 4,
-   "start": 7.38,
-   "end": 8.22,
+   "start": 9.13,
+   "end": 12.326,
    "speaker": "SPEAKER_01",
-   "text": "It's tough, isn't it?",
-   "min_word_prob": 0.992
+   "text": "There's nothing we can do about it unless we go and gatecrash CERN and",
+   "min_word_prob": 0.859
   },
   {
    "i": 5,
-   "start": 8.04,
-   "end": 11.386,
+   "start": 12.41,
+   "end": 14.63,
    "speaker": "SPEAKER_01",
-   "text": "Because if you're pushing down, and then there is going to be an opposing",
-   "min_word_prob": 0.997
+   "text": "smash it up, but we can't. Right.",
+   "min_word_prob": 0.879
   },
   {
    "i": 6,
-   "start": 11.47,
-   "end": 15.26,
+   "start": 15.77,
+   "end": 20.85,
    "speaker": "SPEAKER_01",
-   "text": "force pushing back, where is it going to spill out? Yeah.",
-   "min_word_prob": 0.798
+   "text": "This week's podcast is brought to you by EV Blocks.",
+   "min_word_prob": 0.816
   },
   {
    "i": 7,
-   "start": 16.62,
-   "end": 17.54,
+   "start": 21.07,
+   "end": 22.35,
    "speaker": "SPEAKER_01",
-   "text": "Or is it the top one?",
-   "min_word_prob": 0.779
-  },
-  {
-   "i": 8,
-   "start": 17.68,
-   "end": 19.68,
-   "speaker": "SPEAKER_01",
-   "text": "That's one of Newton's laws, isn't it? Yeah.",
-   "min_word_prob": 0.975
-  },
-  {
-   "i": 9,
-   "start": 19.82,
-   "end": 22.72,
-   "speaker": "SPEAKER_01",
-   "text": "But every action, there's a reaction.",
-   "min_word_prob": 0.968
-  },
-  {
-   "i": 10,
-   "start": 23.08,
-   "end": 24.82,
-   "speaker": "SPEAKER_01",
-   "text": "I can't remember what one. I think it's the fourth law.",
-   "min_word_prob": 0.939
-  },
-  {
-   "i": 11,
-   "start": 24.94,
-   "end": 29.016,
-   "speaker": "SPEAKER_01",
-   "text": "If you know it, if I learned that once, I'd know it forever, and I'd know",
-   "min_word_prob": 0.781
-  },
-  {
-   "i": 12,
-   "start": 29.1,
-   "end": 33.42,
-   "speaker": "SPEAKER_01",
-   "text": "the reason why. But I've just never learned it. Laws.",
-   "min_word_prob": 0.852
-  },
-  {
-   "i": 13,
-   "start": 39.47,
-   "end": 43.2,
-   "speaker": "SPEAKER_01",
-   "text": "Let's see this quickly Why the",
-   "min_word_prob": 0.01
-  },
-  {
-   "i": 14,
-   "start": 45.26,
-   "end": 51.986,
-   "speaker": "SPEAKER_01",
-   "text": "fuck wouldn't it just give me The first law or second law For every",
-   "min_word_prob": 0.069
-  },
-  {
-   "i": 15,
-   "start": 52.07,
-   "end": 55.84,
-   "speaker": "MIXED",
-   "text": "Third law Hello Pickle",
-   "min_word_prob": 0.599
-  },
-  {
-   "i": 16,
-   "start": 59.42,
-   "end": 61.4,
-   "speaker": "SPEAKER_01",
-   "text": "Top middle or bottom",
-   "min_word_prob": 0.66
-  },
-  {
-   "i": 17,
-   "start": 64.04,
-   "end": 70.516,
-   "speaker": "SPEAKER_01",
-   "text": "I personally Think that there is going to be An opposing force to the pressure",
-   "min_word_prob": 0.236
-  },
-  {
-   "i": 18,
-   "start": 70.6,
-   "end": 75.416,
-   "speaker": "SPEAKER_01",
-   "text": "Going down so there might Fuck knows I think it's middle It's got to be",
-   "min_word_prob": 0.428
-  },
-  {
-   "i": 19,
-   "start": 75.5,
-   "end": 80.22,
-   "speaker": "SPEAKER_01",
-   "text": "the middle It could be the bottom though yeah",
-   "min_word_prob": 0.087
-  },
-  {
-   "i": 20,
-   "start": 83.18,
-   "end": 90.11,
-   "speaker": "SPEAKER_01",
-   "text": "where is the most i'll tell you where it is the",
-   "min_word_prob": 0.642
-  },
-  {
-   "i": 21,
-   "start": 91.66,
-   "end": 93.38,
-   "speaker": "SPEAKER_01",
-   "text": "pressure coming in the",
-   "min_word_prob": 1.0
-  },
-  {
-   "i": 22,
-   "start": 95.16,
-   "end": 96.5,
-   "speaker": "SPEAKER_01",
-   "text": "hole at the top not",
-   "min_word_prob": 1.0
-  },
-  {
-   "i": 23,
-   "start": 98.21,
-   "end": 103.576,
-   "speaker": "SPEAKER_01",
-   "text": "the top hole the top of the barrel where the pressure's coming you've said",
-   "min_word_prob": 0.938
-  },
-  {
-   "i": 24,
-   "start": 103.66,
-   "end": 108.736,
-   "speaker": "SPEAKER_01",
-   "text": "every hole so far i never said the top arm what i'm saying is the hole",
-   "min_word_prob": 0.557
-  },
-  {
-   "i": 25,
-   "start": 108.82,
-   "end": 110.74,
-   "speaker": "SPEAKER_01",
-   "text": "where the pressure's coming in see",
-   "min_word_prob": 0.989
-  },
-  {
-   "i": 26,
-   "start": 114.47,
-   "end": 120.76,
-   "speaker": "SPEAKER_01",
-   "text": "that's called lateral thinking see what one is it so",
+   "text": "I say it every week.",
    "min_word_prob": 0.985
   },
   {
-   "i": 27,
-   "start": 123.21,
-   "end": 128.356,
+   "i": 8,
+   "start": 22.65,
+   "end": 29.166,
    "speaker": "SPEAKER_01",
-   "text": "and this is i had to do this typical jack gpt right so i said water tank",
-   "min_word_prob": 0.872
+   "text": "They are an incredibly handy thing if you are putting in freestanding",
+   "min_word_prob": 0.951
+  },
+  {
+   "i": 9,
+   "start": 29.25,
+   "end": 35.876,
+   "speaker": "SPEAKER_01",
+   "text": "EV chargers and you just want a real easy solution to",
+   "min_word_prob": 0.768
+  },
+  {
+   "i": 10,
+   "start": 35.96,
+   "end": 39.32,
+   "speaker": "SPEAKER_01",
+   "text": "bolt your EV chargers to.",
+   "min_word_prob": 0.924
+  },
+  {
+   "i": 11,
+   "start": 39.94,
+   "end": 44.056,
+   "speaker": "SPEAKER_01",
+   "text": "British made, very important to me, being British made, British design, British",
+   "min_word_prob": 0.668
+  },
+  {
+   "i": 12,
+   "start": 44.14,
+   "end": 45.976,
+   "speaker": "SPEAKER_01",
+   "text": "company, lovely people.",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 13,
+   "start": 46.06,
+   "end": 49.2,
+   "speaker": "SPEAKER_01",
+   "text": "I think he's coming on next week.",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 14,
+   "start": 49.36,
+   "end": 51.7,
+   "speaker": "SPEAKER_01",
+   "text": "I'm yet to nail down the time. He's super busy.",
+   "min_word_prob": 0.839
+  },
+  {
+   "i": 15,
+   "start": 51.88,
+   "end": 55.06,
+   "speaker": "SPEAKER_01",
+   "text": "He's all over the place, moving and shaking, building an empire.",
+   "min_word_prob": 0.995
+  },
+  {
+   "i": 16,
+   "start": 55.38,
+   "end": 58.916,
+   "speaker": "SPEAKER_01",
+   "text": "So getting him pinned down has not been easy, but he should be on next",
+   "min_word_prob": 0.956
+  },
+  {
+   "i": 17,
+   "start": 59.0,
+   "end": 63.77,
+   "speaker": "SPEAKER_01",
+   "text": "week, old Trevor. Yeah, so EV Blocks, go check them out.",
+   "min_word_prob": 0.701
+  },
+  {
+   "i": 18,
+   "start": 64.91,
+   "end": 68.206,
+   "speaker": "SPEAKER_01",
+   "text": "It's important to us that you check them out and support our sponsors because",
+   "min_word_prob": 0.406
+  },
+  {
+   "i": 19,
+   "start": 68.29,
+   "end": 71.586,
+   "speaker": "SPEAKER_01",
+   "text": "without them, we wouldn't be able to buy equipment and do stuff and all",
+   "min_word_prob": 0.983
+  },
+  {
+   "i": 20,
+   "start": 71.67,
+   "end": 73.53,
+   "speaker": "SPEAKER_01",
+   "text": "kinds of things. It just makes life easier.",
+   "min_word_prob": 0.845
+  },
+  {
+   "i": 21,
+   "start": 74.05,
+   "end": 78.76,
+   "speaker": "SPEAKER_01",
+   "text": "Anyway, next bit of housekeeping, big shout out to Nick.",
+   "min_word_prob": 0.813
+  },
+  {
+   "i": 22,
+   "start": 79.22,
+   "end": 82.736,
+   "speaker": "SPEAKER_01",
+   "text": "Now, Nick works with my cousin, Lee.",
+   "min_word_prob": 0.991
+  },
+  {
+   "i": 23,
+   "start": 82.82,
+   "end": 84.26,
+   "speaker": "SPEAKER_01",
+   "text": "Big shout out to Lee.",
+   "min_word_prob": 0.755
+  },
+  {
+   "i": 24,
+   "start": 85.74,
+   "end": 87.5,
+   "speaker": "SPEAKER_01",
+   "text": "And do you know what?",
+   "min_word_prob": 0.742
+  },
+  {
+   "i": 25,
+   "start": 87.74,
+   "end": 90.12,
+   "speaker": "SPEAKER_01",
+   "text": "It's not really a funny story, but I'll tell you the story anyway.",
+   "min_word_prob": 0.98
+  },
+  {
+   "i": 26,
+   "start": 90.66,
+   "end": 94.64,
+   "speaker": "SPEAKER_01",
+   "text": "I was at work and Lee phones me up and goes, Cuz!",
+   "min_word_prob": 0.156
+  },
+  {
+   "i": 27,
+   "start": 95.34,
+   "end": 98.2,
+   "speaker": "SPEAKER_01",
+   "text": "Because Lee's a bit full on.",
+   "min_word_prob": 0.88
   },
   {
    "i": 28,
-   "start": 128.44,
-   "end": 132.016,
-   "speaker": "SPEAKER_01",
-   "text": "three holes top middle and bottom which hole would have the most pressure",
-   "min_word_prob": 0.946
+   "start": 98.3,
+   "end": 101.56,
+   "speaker": "MIXED",
+   "text": "A bit like me, but more. Cuz!",
+   "min_word_prob": 0.825
   },
   {
    "i": 29,
-   "start": 132.1,
-   "end": 136.476,
-   "speaker": "SPEAKER_01",
-   "text": "of which is the bottom hole has the highest pressure and then i said i",
-   "min_word_prob": 0.237
+   "start": 102.21,
+   "end": 103.23,
+   "speaker": "SPEAKER_02",
+   "text": "I'm here with a geezer.",
+   "min_word_prob": 0.971
   },
   {
    "i": 30,
-   "start": 136.56,
-   "end": 139.786,
-   "speaker": "SPEAKER_01",
-   "text": "think it's the middle hole you may be thinking of which hole makes the",
-   "min_word_prob": 0.77
+   "start": 103.43,
+   "end": 105.37,
+   "speaker": "SPEAKER_02",
+   "text": "He goes, is your name McDowell?",
+   "min_word_prob": 0.193
   },
   {
    "i": 31,
-   "start": 139.87,
-   "end": 143.506,
+   "start": 106.29,
+   "end": 107.85,
    "speaker": "SPEAKER_01",
-   "text": "water travel furthest in which case the middle hole can indeed be the answer",
-   "min_word_prob": 0.968
+   "text": "And I was like, yeah, boy.",
+   "min_word_prob": 0.929
   },
   {
    "i": 32,
-   "start": 143.59,
-   "end": 148.186,
+   "start": 108.21,
+   "end": 109.93,
    "speaker": "SPEAKER_01",
-   "text": "i could go actually i think i think it's the top hole oh well have you",
-   "min_word_prob": 0.757
+   "text": "He goes, do you know Sam?",
+   "min_word_prob": 0.998
   },
   {
    "i": 33,
-   "start": 148.27,
-   "end": 149.61,
+   "start": 110.45,
+   "end": 112.21,
    "speaker": "SPEAKER_01",
-   "text": "seen that that is it family guy",
-   "min_word_prob": 0.445
+   "text": "Sam McDowell does a podcast.",
+   "min_word_prob": 0.72
+  },
+  {
+   "i": 34,
+   "start": 112.49,
+   "end": 113.45,
+   "speaker": "SPEAKER_01",
+   "text": "He goes, yeah, that's my cousin.",
+   "min_word_prob": 0.977
+  },
+  {
+   "i": 35,
+   "start": 114.76,
+   "end": 118.76,
+   "speaker": "SPEAKER_01",
+   "text": "And then this big old hoo -ha, and he's like, oh, phone him up.",
+   "min_word_prob": 0.916
+  },
+  {
+   "i": 36,
+   "start": 118.98,
+   "end": 122.536,
+   "speaker": "SPEAKER_01",
+   "text": "So I got a phone call from a fan from my cousin's phone at work the other",
+   "min_word_prob": 0.884
+  },
+  {
+   "i": 37,
+   "start": 122.62,
+   "end": 126.94,
+   "speaker": "SPEAKER_01",
+   "text": "day. And so, yeah, this is just a nice shout out to Nick.",
+   "min_word_prob": 0.265
+  },
+  {
+   "i": 38,
+   "start": 128.02,
+   "end": 129.52,
+   "speaker": "SPEAKER_01",
+   "text": "Yeah, part of the show now, bro.",
+   "min_word_prob": 0.997
+  },
+  {
+   "i": 39,
+   "start": 129.78,
+   "end": 130.74,
+   "speaker": "SPEAKER_01",
+   "text": "You've been shouted out.",
+   "min_word_prob": 0.998
+  },
+  {
+   "i": 40,
+   "start": 131.1,
+   "end": 133.88,
+   "speaker": "SPEAKER_01",
+   "text": "You'll have to come on the podcast one day for a chat.",
+   "min_word_prob": 1.0
+  },
+  {
+   "i": 41,
+   "start": 134.31,
+   "end": 136.37,
+   "speaker": "SPEAKER_01",
+   "text": "How about that, Nick? Come on the podcast for a chat.",
+   "min_word_prob": 0.999
+  },
+  {
+   "i": 42,
+   "start": 137.05,
+   "end": 140.89,
+   "speaker": "SPEAKER_01",
+   "text": "DM me at Instagram, Sam the electrician.",
+   "min_word_prob": 0.683
+  },
+  {
+   "i": 43,
+   "start": 141.39,
+   "end": 144.15,
+   "speaker": "SPEAKER_01",
+   "text": "And we'll get you on the podcast.",
+   "min_word_prob": 0.954
+  },
+  {
+   "i": 44,
+   "start": 144.39,
+   "end": 146.75,
+   "speaker": "SPEAKER_01",
+   "text": "Be nice to get a fan on the podcast. No?",
+   "min_word_prob": 0.541
+  },
+  {
+   "i": 45,
+   "start": 147.33,
+   "end": 148.81,
+   "speaker": "SPEAKER_01",
+   "text": "And it's weird saying fan.",
+   "min_word_prob": 0.438
+  },
+  {
+   "i": 46,
+   "start": 149.07,
+   "end": 149.97,
+   "speaker": "SPEAKER_01",
+   "text": "Let's say...",
+   "min_word_prob": 0.928
   }
  ]
 }

@@ -39,24 +39,24 @@ nav a{margin-right:16px;text-decoration:none}
 </style></head>
 <body><div class="wrap">
 <nav><a href="/">Store</a><a href="/pricing.html">Pricing</a>
-<a href="/samples/">Samples</a><a href="/terms.html">Terms</a></nav>
+<a href="/samples/">Samples</a><a href="/accuracy.html">Accuracy</a><a href="/terms.html">Terms</a></nav>
 
 <p><a href="/samples/">&larr; all samples</a></p>
 <h1>Linux User Space</h1>
-<p class="lede">We&#x27;ll Bootc About That (Season 7 Episode 2)
-&middot; published Mon, 12 Oct 2026
-&middot; full episode 1:24:58</p>
+<p class="lede">Mixture of Eggheads (Season 7 Episode 3)
+&middot; published Mon, 26 Oct 2026
+&middot; full episode 1:43:13</p>
 <p class="note">A 150-second slice starting at 7:00 + 150s of the show's own
 latest episode, taken from the show's public feed and run through the exact pipeline the paid files
 come from. This is a sample of format, not a claim about the whole episode.</p>
 <table>
 <tr><th>Measured on this slice</th><th></th></tr>
-<tr><td>words</td><td class="n">437</td></tr>
-<tr><td>cues</td><td class="n">42</td></tr>
-<tr><td>speakers resolved</td><td class="n">1</td></tr>
-<tr><td>rule violations</td><td class="n">over max duration: 0, under min duration: 0, over two lines: 0, over 42 chars per line: 0, gap under two frames: 1</td></tr>
-<tr><td>transcription time (150 s of audio)</td><td class="n">7.1 s
- (realtime factor 0.0474)</td></tr>
+<tr><td>words</td><td class="n">370</td></tr>
+<tr><td>cues</td><td class="n">38</td></tr>
+<tr><td>speakers resolved</td><td class="n">3</td></tr>
+<tr><td>rule violations</td><td class="n">over max duration: 0, under min duration: 0, over two lines: 0, over 42 chars per line: 0, gap under two frames: 0</td></tr>
+<tr><td>transcription time (150 s of audio)</td><td class="n">123.2 s
+ (realtime factor 0.8216)</td></tr>
 </table>
 <h2>Download the actual files</h2>
 <ul>
@@ -67,33 +67,74 @@ come from. This is a sample of format, not a claim about the whole episode.</p>
 <li><a href="linux-user-space/sample.cues.json">sample.cues.json</a> &mdash; cue data</li>
 </ul>
 <h2>Transcript</h2>
-<pre>[00:00] SPEAKER_01: I don&#x27;t know. I don&#x27;t want to homework, banking. No, no, no, no, no, no. I got multi -account containers for all of that. Don&#x27;t ask me questions. I&#x27;m just going to say they&#x27;re trying to keep up with the Joneses and the Chromes medium -based stuff. Which I will say months ago, I think before we went on break, Chrome pushed it. Like as in it&#x27;s no longer optional. No, no, it&#x27;s out there. Yeah, you have to pick one. You pick a profile. and to their credit when you change profiles like the whole browser changes color and so i didn&#x27;t actually test this on firefox because again i hate profiles um so it might do this in firefox too that that would be kind of cool honestly i like that touch it&#x27;s a nice touch if you like profiles but i don&#x27;t and so you better believe the first time i saw the profile window i was like oh my god how do you turn this off yeah no i don&#x27;t need this i don&#x27;t need this of my life this is wrong um but the other thing was i mentioned multi -account containers they added it to the browser it&#x27;s like it&#x27;s part of the browser yeah this was uh a little scary because i didn&#x27;t know if it was going to break my containers when you like when you when you brought them in uh but it did seem like the streams did not get crossed seem to handle it okay Yeah, and it remembered the cookies in those, so it kept me logged in. Nice. That&#x27;s sort of how it should work, I think. Right. Well, but it went from extension to baked in. So I think what they did was that. I think they just took the extension and threw the code in the actual code base. Yeah, so the configurations are still in the same place. So it was able to reference all that, and the cookies were still there, and everything just seemed to pick up where it left off. Yes. So I appreciate that. Except on the machine that I&#x27;m on right now, it refuses to pull down my profiles or my containers. So it&#x27;s not syncing them between browsers is what you&#x27;re saying? You know what? Okay. So newsflash. Yes. Before I looked right now. Yes, that was the case where it was like it had its own set of containers. Cool. I guess I could just remake them and match them up. That&#x27;s annoying, but okay. So I just left it. I didn&#x27;t want to.
+<pre>[00:00] SPEAKER_01: the human was in the loop.
+[00:02] SPEAKER_01: The human was one of the humans that I trust when it comes to stuff like this.
+[00:09] SPEAKER_01: We would call that
+[00:10] SPEAKER_02: person the subject matter expert in this case, I&#x27;m
+[00:14] SPEAKER_03: just going to say.
+[00:16] SPEAKER_01: Exactly.
+[00:16] SPEAKER_01: And my refrain has been a good practitioner is who you want behind
+[00:24] SPEAKER_01: the vibing, right?
+[00:26] SPEAKER_01: But in this case, I do have to be clear, right?
+[00:29] SPEAKER_01: This is not vibe coding.
+[00:33] SPEAKER_01: This is LLM assisting, essentially.
+[00:37] SPEAKER_01: And there&#x27;s a huge difference.
+[00:39] SPEAKER_01: I don&#x27;t know if I defined it on this show or not.
+[00:41] SPEAKER_01: But the difference is I would vibe code something into the kernel, right?
+[00:48] SPEAKER_01: Like, I have no clue what good C code looks like in the first place to be like, and I have no real frame
+[00:56] SPEAKER_01: of reference for any part of the kernel itself.
+[00:58] SPEAKER_01: So me being like, we can fix that.
+[01:01] SPEAKER_01: Just tippa -tappa, tippa -tappa, tippa -tappa, let an AI kind of do its thing or whatever.
+[01:05] SPEAKER_01: And it&#x27;s like, here you go.
+[01:06] SPEAKER_01: Here&#x27;s your code.
+[01:06] SPEAKER_01: And I&#x27;d be like, yeah, looks good.
+[01:09] SPEAKER_01: Just throw that in there.
+[01:11] SPEAKER_01: Yeah.
+[01:12] SPEAKER_01: That&#x27;s vibe coding.
+[01:14] SPEAKER_01: Whereas LLM assisted or LLM assisting is kind
+[01:18] SPEAKER_01: of the same thing.
+[01:19] SPEAKER_01: But the huge difference is the practitioner sitting there that
+[01:23] SPEAKER_01: is able to tell good code from bad code that is able to tell this fits, this doesn&#x27;t fit.
+[01:29] SPEAKER_01: This is performant.
+[01:30] SPEAKER_01: This is not performant.
+[01:32] SPEAKER_02: And I think before you even get to that point where it&#x27;s giving you the output of what the code looks like,
+[01:37] SPEAKER_02: that practitioner, operator, or whatever we&#x27;re going to call them, they&#x27;re the ones that are feeding the
+[01:44] SPEAKER_02: right context to the AI.
+[01:46] SPEAKER_02: And I think that&#x27;s super important because
+[01:51] SPEAKER_02: you didn&#x27;t just tell it to go write me a Linux kernel.
+[01:55] SPEAKER_02: He said, go fix this specific part in a certain way with these types of parameters and do all of this.
+[02:05] SPEAKER_02: So he filled in the gaps that it could have easily went to.
+[02:12] SPEAKER_02: And then the output it gave is probably a lot more concise and going to
+[02:22] SPEAKER_02: be a better quality product, I&#x27;m going to say.
+[02:25] SPEAKER_03: Yeah.
+[02:26] SPEAKER_03: Well, I mean, Linus
+[02:27] SPEAKER_01: is notoriously hard on control.
 </pre>
 <h2>First cues, as SRT</h2>
 <pre>1
-00:00:00,000 --&gt; 00:00:03,020
-SPEAKER_01: I don&#x27;t know. I don&#x27;t want to homework,
-banking.
+00:00:00,000 --&gt; 00:00:02,440
+SPEAKER_01: the human was in the loop.
 
 2
-00:00:03,220 --&gt; 00:00:04,096
-SPEAKER_01: No, no, no, no, no, no.
+00:00:02,580 --&gt; 00:00:08,526
+SPEAKER_01: The human was one of the humans that I
+trust when it comes to stuff like
 
 3
-00:00:04,180 --&gt; 00:00:05,860
-SPEAKER_01: I got multi -account containers for all of
-that.
+00:00:08,610 --&gt; 00:00:10,136
+SPEAKER_01: this. We would call
 
 4
-00:00:06,180 --&gt; 00:00:07,020
-SPEAKER_01: Don&#x27;t ask me questions.
+00:00:10,220 --&gt; 00:00:13,240
+SPEAKER_02: that person the subject matter expert in
+this case,
 
 5
-00:00:06,940 --&gt; 00:00:09,956
-SPEAKER_01: I&#x27;m just going to say they&#x27;re trying to
-keep up with the Joneses and the
+00:00:13,640 --&gt; 00:00:16,666
+MIXED: I&#x27;m just going to say. Exactly.
 
-6</pre>
+6
+00:00:16,750 --&gt; 00:00:23,020</pre>
 
 <footer>Nora Moneymaker &middot; <a href="mailto:noramoneymaker@proton.me">noramoneymaker@proton.me</a> &middot;
 one operator, one machine, no third-party upload &middot;

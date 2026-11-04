@@ -1,1 +1,42 @@
-[00:00] SPEAKER_01: I don't know. I don't want to homework, banking. No, no, no, no, no, no. I got multi -account containers for all of that. Don't ask me questions. I'm just going to say they're trying to keep up with the Joneses and the Chromes medium -based stuff. Which I will say months ago, I think before we went on break, Chrome pushed it. Like as in it's no longer optional. No, no, it's out there. Yeah, you have to pick one. You pick a profile. and to their credit when you change profiles like the whole browser changes color and so i didn't actually test this on firefox because again i hate profiles um so it might do this in firefox too that that would be kind of cool honestly i like that touch it's a nice touch if you like profiles but i don't and so you better believe the first time i saw the profile window i was like oh my god how do you turn this off yeah no i don't need this i don't need this of my life this is wrong um but the other thing was i mentioned multi -account containers they added it to the browser it's like it's part of the browser yeah this was uh a little scary because i didn't know if it was going to break my containers when you like when you when you brought them in uh but it did seem like the streams did not get crossed seem to handle it okay Yeah, and it remembered the cookies in those, so it kept me logged in. Nice. That's sort of how it should work, I think. Right. Well, but it went from extension to baked in. So I think what they did was that. I think they just took the extension and threw the code in the actual code base. Yeah, so the configurations are still in the same place. So it was able to reference all that, and the cookies were still there, and everything just seemed to pick up where it left off. Yes. So I appreciate that. Except on the machine that I'm on right now, it refuses to pull down my profiles or my containers. So it's not syncing them between browsers is what you're saying? You know what? Okay. So newsflash. Yes. Before I looked right now. Yes, that was the case where it was like it had its own set of containers. Cool. I guess I could just remake them and match them up. That's annoying, but okay. So I just left it. I didn't want to.
+[00:00] SPEAKER_01: the human was in the loop.
+[00:02] SPEAKER_01: The human was one of the humans that I trust when it comes to stuff like this.
+[00:09] SPEAKER_01: We would call that
+[00:10] SPEAKER_02: person the subject matter expert in this case, I'm
+[00:14] SPEAKER_03: just going to say.
+[00:16] SPEAKER_01: Exactly.
+[00:16] SPEAKER_01: And my refrain has been a good practitioner is who you want behind
+[00:24] SPEAKER_01: the vibing, right?
+[00:26] SPEAKER_01: But in this case, I do have to be clear, right?
+[00:29] SPEAKER_01: This is not vibe coding.
+[00:33] SPEAKER_01: This is LLM assisting, essentially.
+[00:37] SPEAKER_01: And there's a huge difference.
+[00:39] SPEAKER_01: I don't know if I defined it on this show or not.
+[00:41] SPEAKER_01: But the difference is I would vibe code something into the kernel, right?
+[00:48] SPEAKER_01: Like, I have no clue what good C code looks like in the first place to be like, and I have no real frame
+[00:56] SPEAKER_01: of reference for any part of the kernel itself.
+[00:58] SPEAKER_01: So me being like, we can fix that.
+[01:01] SPEAKER_01: Just tippa -tappa, tippa -tappa, tippa -tappa, let an AI kind of do its thing or whatever.
+[01:05] SPEAKER_01: And it's like, here you go.
+[01:06] SPEAKER_01: Here's your code.
+[01:06] SPEAKER_01: And I'd be like, yeah, looks good.
+[01:09] SPEAKER_01: Just throw that in there.
+[01:11] SPEAKER_01: Yeah.
+[01:12] SPEAKER_01: That's vibe coding.
+[01:14] SPEAKER_01: Whereas LLM assisted or LLM assisting is kind
+[01:18] SPEAKER_01: of the same thing.
+[01:19] SPEAKER_01: But the huge difference is the practitioner sitting there that
+[01:23] SPEAKER_01: is able to tell good code from bad code that is able to tell this fits, this doesn't fit.
+[01:29] SPEAKER_01: This is performant.
+[01:30] SPEAKER_01: This is not performant.
+[01:32] SPEAKER_02: And I think before you even get to that point where it's giving you the output of what the code looks like,
+[01:37] SPEAKER_02: that practitioner, operator, or whatever we're going to call them, they're the ones that are feeding the
+[01:44] SPEAKER_02: right context to the AI.
+[01:46] SPEAKER_02: And I think that's super important because
+[01:51] SPEAKER_02: you didn't just tell it to go write me a Linux kernel.
+[01:55] SPEAKER_02: He said, go fix this specific part in a certain way with these types of parameters and do all of this.
+[02:05] SPEAKER_02: So he filled in the gaps that it could have easily went to.
+[02:12] SPEAKER_02: And then the output it gave is probably a lot more concise and going to
+[02:22] SPEAKER_02: be a better quality product, I'm going to say.
+[02:25] SPEAKER_03: Yeah.
+[02:26] SPEAKER_03: Well, I mean, Linus
+[02:27] SPEAKER_01: is notoriously hard on control.

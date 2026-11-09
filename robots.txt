@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+
+# Google discovers a sitemap from this line without a Search Console property,
+# which is the only indexing path that needs no account.
+Sitemap: https://noramoneymaker.github.io/sitemap.xml

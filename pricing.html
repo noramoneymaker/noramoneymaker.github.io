@@ -52,18 +52,30 @@ nav a{margin-right:16px;text-decoration:none}
 <a href="/samples/">Samples</a><a href="/accuracy.html">Accuracy</a><a href="/terms.html">Terms</a></nav>
 
 <h1>Pricing</h1>
-<p class="lede">Per file, not per hour, and not a subscription. The comparison below is against
-published list prices read off each vendor's own page on 2026-10-17.</p>
+<p class="lede">Per file, not per hour, and not a subscription. Every rate in the table below was read
+off the vendor's own page on <span class="k">2026-11-19</span>; each row is that published rate
+multiplied by 42 minutes.</p>
 <table>
-<tr><th>Service</th><th>Rate</th><th>Cost of a 42-minute episode</th></tr>
-<tr><td>Rev &mdash; human transcription</td><td class="n">$1.99 / audio min</td><td class="n">$82.78</td></tr>
-<tr><td>Happy Scribe &mdash; human</td><td class="n">$2.00 / audio min</td><td class="n">$83.20</td></tr>
-<tr><td>Scribie &mdash; human, formatted</td><td class="n">$0.80 / audio min</td><td class="n">$33.28</td></tr>
+<tr><th>Service</th><th>Published rate</th><th>Cost of a 42-minute episode</th></tr>
+<tr><td>Rev &mdash; human captions, English</td><td class="n">$6.49 / audio min</td><td class="n">$272.58</td></tr>
+<tr><td>Happy Scribe &mdash; human proofreading</td><td class="n">from $2.00 / audio min</td><td class="n">$84.00</td></tr>
+<tr><td>Rev &mdash; human transcription</td><td class="n">starts at $1.99 / audio min</td><td class="n">$83.58</td></tr>
+<tr><td>Scribie &mdash; human</td><td class="n">$0.80 / audio min<br><small>$1.30 with custom formatting</small></td><td class="n">$33.60</td></tr>
 <tr><td><span class="k">Nora Moneymaker</span></td><td class="n">$0.60 / audio min</td><td class="n">$25.20</td></tr>
-<tr><td>Sonix &mdash; machine</td><td class="n">~$0.167 / audio min</td><td class="n">$6.95 + a monthly plan</td></tr>
+<tr><td>Happy Scribe &mdash; machine credits</td><td class="n">$0.20 / audio min</td><td class="n">$8.40</td></tr>
+<tr><td>Sonix &mdash; machine, pay as you go</td><td class="n">$10 / audio hour</td><td class="n">$7.00</td></tr>
 </table>
 <p class="note">42 minutes is the median episode length of the shows this was built for, measured
-across 142 public feeds. Rates above are the vendors' published list prices, not quotes.</p>
+across 142 public feeds. Rates above are the vendors' published list prices, not quotes. Sources, read
+2026-11-19: rev.com/pricing (&ldquo;Human transcription starts at $1.99/min&rdquo;, captions
+&ldquo;$6.49/minute&rdquo; English), happyscribe.com/pricing (&ldquo;Human proofreading From
+$2.00/min&rdquo;, &ldquo;Additional credits at $0.20/min&rdquo;), scribie.com (&ldquo;Starting @
+$0.80/min&rdquo;), sonix.ai/pricing (&ldquo;Additional hours on any subscription plan are billed at
+$10/hr&rdquo;).</p>
+<p class="note">Read that honestly: a transcript here is <span class="k">3.3&times; cheaper than a
+human</span> and <span class="k">3.6&times; the price of machine text</span> from Sonix. Text is not
+what you are buying at $0.60 a minute &mdash; per-word speaker labels, cue timing that passes a
+validator, a named list of the words the machine was unsure about, and no subscription are.</p>
 
 <h3>What an order costs</h3>
 <table>
@@ -73,11 +85,13 @@ across 142 public feeds. Rates above are the vendors' published list prices, not
 <tr><td>Publish check &mdash; one episode up to 90 min</td><td class="n">$6.00 flat</td><td class="n">inside 24 h</td></tr>
 <tr><td>Subtitles only (SRT + VTT), any length</td><td class="n">$0.40 / audio min<br><small>minimum $12.00</small></td><td class="n">inside 24 h</td></tr>
 </table>
-<p class="note">Subtitles-only runs at $0.40 per minute. The captioners it competes with are paid
-$1.75 per minute at GoTranscript (re-checked 2026-10-28) and $0.55&ndash;$2.00+ per minute at Rev
-(2026-10-17). The raw machine cost to build a file here is ~$0.006 per minute, so the gap between
-$0.40 and the $0.167&ndash;$0.20 raw AI rate (Sonix, Happy Scribe AI, 2026-10-17) is the price of
-a file that arrives Netflix-compliant and never leaves one machine.</p>
+<p class="note">Subtitles-only at $0.40 per minute is <span class="k">$16.80</span> for that same
+42-minute episode: 16&times; under Rev's human caption rate of $272.58, and 2&times; the $8.40 you
+would pay Happy Scribe for machine credits. The difference is a file that arrives already measured
+against the 42-character / 7-second / 2-frame rules, produced on one machine, never uploaded to a
+vendor. Against what captioners are paid for the labour &mdash; GoTranscript advertises &ldquo;Earn up
+to $1.75 per minute&rdquo; (re-read 2026-11-19) &mdash; $0.40 is not a lowball on the work, it is the
+work done on hardware that already exists.</p>
 <p>Worked examples: 20 minutes $12.00 &middot; 42 minutes $25.20 &middot; 60 minutes $36.00 &middot;
 3 hours $108.00. Subtitles-only at $0.40/min: 20 minutes $12.00 &middot; 42 minutes $16.80 &middot;
 60 minutes $24.00 &middot; 3 hours $72.00.</p>
@@ -93,5 +107,5 @@ text and as JSON. Useful before submitting to a network or a host that checks le
 
 <footer>Nora Moneymaker &middot; <a href="mailto:noramoneymaker@proton.me">noramoneymaker@proton.me</a> &middot;
 one operator, one machine, no third-party upload &middot;
-prices and specs dated 2026-10-17 to 2026-11-09</footer>
+prices and specs dated 2026-10-17 to 2026-11-19</footer>
 </div></body></html>

@@ -65,9 +65,10 @@ back to you in writing.</p>
 
 <div class="card">
 <div class="price">$0.40 <small>per audio minute, $12 minimum</small></div>
-<p style="margin:8px 0 0">Subtitles only. The episode.srt and episode.vtt, built to the same delivery
-spec &mdash; max 2 lines, 42 characters per line, 7 s max cue, 0.84 s min cue, 2-frame gap &mdash;
-delivered as a zip with a measured compliance report. No transcript, no QA note, nothing else.
+<p style="margin:8px 0 0">Subtitles only. The broadcast copy
+(<span class="mono">episode.clean.srt</span>) and <span class="mono">episode.vtt</span>, built to the
+delivery spec &mdash; max 2 lines, 42 characters per line, 7 s max cue, 0.84 s min cue, 2-frame gap
+&mdash; delivered as a zip with a measured compliance report. No transcript, no QA note, nothing else.
 For an episode you have already transcribed and just need YouTube-ready captions, or a channel that
 wants subtitles without the text file.</p>
 </div>
@@ -80,18 +81,28 @@ wants subtitles without the text file.</p>
 timestamp on every turn.</td></tr>
 <tr><td class="n"><span class="mono">transcript-reading.txt</span></td>
 <td>The same text with the timestamps stripped, for reading or pasting into a show-notes draft.</td></tr>
-<tr><td class="n"><span class="mono">episode.srt</span> / <span class="mono">.vtt</span></td>
-<td>Subtitles built to a delivery spec: max 2 lines, 42 characters per line, 7 s max cue,
-0.84 s min cue, 2-frame gap. The violation count is measured per file, not asserted.</td></tr>
+<tr><td class="n"><span class="mono">episode.srt</span></td>
+<td>The <span class="k">speaker-labelled</span> subtitles: every cue begins
+<span class="mono">SPEAKER_01:</span>. This is the copy you read to follow who is talking. That prefix
+costs line width, so this is <span class="k">not</span> the file that meets the 42-character rule
+&mdash; the next one is.</td></tr>
+<tr><td class="n"><span class="mono">episode.clean.srt</span></td>
+<td>The <span class="k">broadcast copy</span>: identical cues and timings, labels removed, lines wrapped
+to the delivery spec. On the last full-length order run through this pipeline (871 s of audio, 309
+cues) it scored <span class="k">0 violations</span> against the same checker the $0.02 endpoint
+sells. This is the file you hand to a caption validator.</td></tr>
+<tr><td class="n"><span class="mono">episode.vtt</span></td>
+<td>WebVTT for YouTube and web players &mdash; the same compliant cue set as the clean SRT.</td></tr>
 <tr><td class="n"><span class="mono">cues.json</span> / <span class="mono">words.json</span></td>
 <td>Every cue and every word with its own start, end and confidence &mdash; so you can re-cut without
 re-transcribing.</td></tr>
 <tr><td class="n"><span class="mono">QA.txt</span></td>
 <td>Every low-confidence word named, with its timestamp. Nothing is silently guessed.</td></tr>
 </table>
-<p class="note">A <span class="k">subtitles-only</span> order delivers just the two subtitle files
-plus the compliance report &mdash; transcript.txt, cues.json, words.json and the QA note are only in
-the transcript order.</p>
+<p class="note">Eight files: transcript, reading copy, two SRTs, one VTT, cue data, word data and the
+QA note. A <span class="k">subtitles-only</span> order sends <span class="mono">episode.clean.srt</span>,
+<span class="mono">episode.vtt</span> and the measured compliance report &mdash; the labelled SRT, the
+transcripts, the JSON and the QA note belong to the transcript order.</p>
 
 <h2>How it works</h2>
 <ol>
@@ -140,5 +151,5 @@ broken down, is on <a href="/accuracy.html">accuracy</a>.</p>
 
 <footer>Nora Moneymaker &middot; <a href="mailto:noramoneymaker@proton.me">noramoneymaker@proton.me</a> &middot;
 one operator, one machine, no third-party upload &middot;
-prices and specs dated 2026-10-17 to 2026-11-09</footer>
+prices and specs dated 2026-10-17 to 2026-11-19</footer>
 </div></body></html>

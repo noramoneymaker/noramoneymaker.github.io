@@ -3,234 +3,250 @@
   {
    "i": 1,
    "start": 0.0,
-   "end": 2.1,
+   "end": 2.26,
    "speaker": "SPEAKER_01",
-   "text": "I'm a physician in Osaka, Japan.",
-   "min_word_prob": 0.866
+   "text": "hypertension, and obesity.",
+   "min_word_prob": 0.842
   },
   {
    "i": 2,
-   "start": 2.46,
-   "end": 9.36,
+   "start": 2.88,
+   "end": 4.88,
    "speaker": "SPEAKER_01",
-   "text": "I specialize in diabetes and I have been practicing medicine for",
-   "min_word_prob": 0.553
+   "text": "And it's a very busy clinic.",
+   "min_word_prob": 0.955
   },
   {
    "i": 3,
-   "start": 9.8,
-   "end": 12.18,
+   "start": 5.24,
+   "end": 10.86,
    "speaker": "SPEAKER_01",
-   "text": "about 24 years.",
-   "min_word_prob": 0.993
+   "text": "I see around 80 patients a day and sometimes more than 90.",
+   "min_word_prob": 0.743
   },
   {
    "i": 4,
-   "start": 13.08,
-   "end": 18.916,
+   "start": 11.3,
+   "end": 18.196,
    "speaker": "SPEAKER_01",
-   "text": "I now run my own community clinic where I see many different",
-   "min_word_prob": 0.947
+   "text": "So conversations about change are not separate intervention for",
+   "min_word_prob": 0.588
   },
   {
    "i": 5,
-   "start": 19.0,
-   "end": 25.496,
+   "start": 18.28,
+   "end": 23.96,
    "speaker": "SPEAKER_01",
-   "text": "health problems, but much of my work is with chronic",
-   "min_word_prob": 0.997
+   "text": "me. They are part of ordinary clinical care every day.",
+   "min_word_prob": 0.412
   },
   {
    "i": 6,
-   "start": 25.58,
-   "end": 31.44,
+   "start": 24.88,
+   "end": 31.64,
    "speaker": "SPEAKER_01",
-   "text": "conditions such as diabetes, hypertension, and obesity.",
-   "min_word_prob": 0.971
+   "text": "So eating, activity, medication, sleep, stress, work,",
+   "min_word_prob": 0.676
   },
   {
    "i": 7,
-   "start": 32.51,
-   "end": 34.19,
+   "start": 31.94,
+   "end": 38.44,
    "speaker": "SPEAKER_01",
-   "text": "And it's a very busy clinic.",
-   "min_word_prob": 0.513
+   "text": "and motivational intervention has become so important in my practice.",
+   "min_word_prob": 0.191
   },
   {
    "i": 8,
-   "start": 34.49,
-   "end": 40.15,
+   "start": 39.4,
+   "end": 46.076,
    "speaker": "SPEAKER_01",
-   "text": "I see around 80 patients a day and sometimes more than 90.",
-   "min_word_prob": 0.893
+   "text": "I first came across MI when I was working in diabetes and",
+   "min_word_prob": 0.804
   },
   {
    "i": 9,
-   "start": 40.61,
-   "end": 47.526,
+   "start": 46.16,
+   "end": 47.66,
    "speaker": "SPEAKER_01",
-   "text": "So conversations about change are not separate intervention for",
-   "min_word_prob": 0.533
+   "text": "metabolites department.",
+   "min_word_prob": 0.375
   },
   {
    "i": 10,
-   "start": 47.61,
-   "end": 53.156,
-   "speaker": "MIXED",
-   "text": "me. They are part of all -in -all clinical care every day.",
-   "min_word_prob": 0.534
+   "start": 49.58,
+   "end": 54.18,
+   "speaker": "SPEAKER_01",
+   "text": "And I work in outpatient clinic at the university hospital.",
+   "min_word_prob": 0.407
   },
   {
    "i": 11,
-   "start": 53.24,
-   "end": 56.18,
-   "speaker": "SPEAKER_02",
-   "text": "So eating, activity,",
-   "min_word_prob": 0.555
+   "start": 55.12,
+   "end": 61.63,
+   "speaker": "SPEAKER_01",
+   "text": "At that time, I thought that if patients did not change their lifestyle,",
+   "min_word_prob": 0.178
   },
   {
    "i": 12,
-   "start": 57.14,
-   "end": 64.04,
+   "start": 62.7,
+   "end": 68.78,
    "speaker": "SPEAKER_01",
-   "text": "medication, sleep, stress, work, and motivational interviewing has",
-   "min_word_prob": 0.913
+   "text": "maybe they simply did not have enough medical knowledge.",
+   "min_word_prob": 0.744
   },
   {
    "i": 13,
-   "start": 64.44,
-   "end": 67.8,
+   "start": 69.52,
+   "end": 72.5,
    "speaker": "SPEAKER_01",
-   "text": "become so important in my practice.",
-   "min_word_prob": 0.996
+   "text": "So I tried very hard to explain.",
+   "min_word_prob": 0.84
   },
   {
    "i": 14,
-   "start": 68.06,
-   "end": 74.596,
+   "start": 73.02,
+   "end": 78.78,
    "speaker": "SPEAKER_01",
-   "text": "I first came across MI when I was working in diabetes",
-   "min_word_prob": 0.613
+   "text": "I talked about diabetes and its complications and risks.",
+   "min_word_prob": 0.929
   },
   {
    "i": 15,
-   "start": 74.68,
-   "end": 81.286,
+   "start": 79.64,
+   "end": 82.08,
    "speaker": "SPEAKER_01",
-   "text": "and metabolic department, and I worked in outpatient",
-   "min_word_prob": 0.434
+   "text": "And I asked many questions.",
+   "min_word_prob": 0.928
   },
   {
    "i": 16,
-   "start": 81.37,
-   "end": 83.246,
+   "start": 82.38,
+   "end": 86.2,
    "speaker": "SPEAKER_01",
-   "text": "clinic at a university hospital.",
-   "min_word_prob": 0.78
+   "text": "And also, I tried to listen very carefully, too.",
+   "min_word_prob": 0.775
   },
   {
    "i": 17,
-   "start": 83.33,
-   "end": 90.096,
+   "start": 86.7,
+   "end": 93.34,
    "speaker": "SPEAKER_01",
-   "text": "At that time, I thought that if patients did not change their",
-   "min_word_prob": 0.823
+   "text": "So from my point of view, I was, I supposed to be a good doctor.",
+   "min_word_prob": 0.17
   },
   {
    "i": 18,
-   "start": 90.18,
-   "end": 96.716,
+   "start": 93.94,
+   "end": 99.8,
    "speaker": "SPEAKER_01",
-   "text": "lifestyle, maybe they simply did not have enough",
-   "min_word_prob": 0.982
+   "text": "But sometimes I spent more than 30 minutes with one patient.",
+   "min_word_prob": 0.796
   },
   {
    "i": 19,
-   "start": 96.8,
-   "end": 98.0,
+   "start": 100.56,
+   "end": 107.106,
    "speaker": "SPEAKER_01",
-   "text": "medical knowledge.",
-   "min_word_prob": 1.0
+   "text": "So even we often had good relationships, many people still",
+   "min_word_prob": 0.793
   },
   {
    "i": 20,
-   "start": 98.28,
-   "end": 101.76,
+   "start": 107.19,
+   "end": 109.01,
    "speaker": "SPEAKER_01",
-   "text": "So I tried very hard to explain.",
-   "min_word_prob": 0.824
+   "text": "did not make changes.",
+   "min_word_prob": 0.728
   },
   {
    "i": 21,
-   "start": 102.28,
-   "end": 108.66,
+   "start": 109.93,
+   "end": 112.43,
    "speaker": "SPEAKER_01",
-   "text": "I talked about diabetes and its complications and risks, and",
-   "min_word_prob": 0.992
+   "text": "And my clinics ran late.",
+   "min_word_prob": 0.829
   },
   {
    "i": 22,
-   "start": 109.22,
-   "end": 111.296,
+   "start": 113.76,
+   "end": 115.94,
    "speaker": "SPEAKER_01",
-   "text": "I asked many questions.",
-   "min_word_prob": 0.999
+   "text": "Then I became exhausted.",
+   "min_word_prob": 0.982
   },
   {
    "i": 23,
-   "start": 111.38,
-   "end": 115.456,
-   "speaker": "SPEAKER_01",
-   "text": "And also, I tried to listen very carefully, too.",
-   "min_word_prob": 0.938
+   "start": 116.79,
+   "end": 120.29,
+   "speaker": "SPEAKER_02",
+   "text": "So at that point, at some point, then",
+   "min_word_prob": 0.963
   },
   {
    "i": 24,
-   "start": 115.54,
-   "end": 122.086,
+   "start": 120.56,
+   "end": 126.77,
    "speaker": "SPEAKER_01",
-   "text": "So from my point of view, I was, I supposed to be a good",
-   "min_word_prob": 0.533
+   "text": "I started to think, maybe the problem is not the patient.",
+   "min_word_prob": 0.218
   },
   {
    "i": 25,
-   "start": 122.17,
-   "end": 129.07,
+   "start": 127.11,
+   "end": 130.55,
    "speaker": "SPEAKER_01",
-   "text": "doctor, but sometimes I spent more than 30 minutes with one patient.",
-   "min_word_prob": 0.816
+   "text": "Maybe I need a better way to communicate.",
+   "min_word_prob": 0.959
   },
   {
    "i": 26,
-   "start": 129.53,
-   "end": 136.316,
+   "start": 130.89,
+   "end": 133.05,
    "speaker": "SPEAKER_01",
-   "text": "So even we often had good relationships, many people still",
-   "min_word_prob": 0.967
+   "text": "So I need to change something.",
+   "min_word_prob": 0.83
   },
   {
    "i": 27,
-   "start": 136.4,
-   "end": 141.72,
+   "start": 133.29,
+   "end": 134.71,
    "speaker": "SPEAKER_01",
-   "text": "did not make changes and my clinics ran late.",
-   "min_word_prob": 0.747
+   "text": "I talk with my patients.",
+   "min_word_prob": 0.83
   },
   {
    "i": 28,
-   "start": 141.82,
-   "end": 145.036,
+   "start": 136.12,
+   "end": 143.01,
    "speaker": "SPEAKER_01",
-   "text": "Then I became exhausted.",
-   "min_word_prob": 0.997
+   "text": "So I started to find communication method, which supports",
+   "min_word_prob": 0.556
   },
   {
    "i": 29,
-   "start": 145.12,
-   "end": 149.56,
+   "start": 143.6,
+   "end": 146.78,
    "speaker": "SPEAKER_01",
-   "text": "So, at that point, at some point, then",
-   "min_word_prob": 0.54
+   "text": "behavior change more efficiently and effectively.",
+   "min_word_prob": 0.925
+  },
+  {
+   "i": 30,
+   "start": 148.14,
+   "end": 149.676,
+   "speaker": "SPEAKER_01",
+   "text": "And finally, I lot more on them.",
+   "min_word_prob": 0.026
+  },
+  {
+   "i": 31,
+   "start": 149.76,
+   "end": 150.6,
+   "speaker": "SPEAKER_01",
+   "text": "So even my patients are doing a lot of things, I think, maybe the family",
+   "min_word_prob": 0.002
   }
  ]
 }

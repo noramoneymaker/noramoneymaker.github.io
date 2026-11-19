@@ -1,133 +1,141 @@
 1
-00:00:00,000 --> 00:00:02,100
-I'm a physician in Osaka, Japan.
+00:00:00,000 --> 00:00:02,260
+hypertension, and obesity.
 
 2
-00:00:02,460 --> 00:00:09,360
-I specialize in diabetes and I have been
-practicing medicine for
-
-3
-00:00:09,800 --> 00:00:12,180
-about 24 years.
-
-4
-00:00:13,080 --> 00:00:18,916
-I now run my own community clinic where I
-see many different
-
-5
-00:00:19,000 --> 00:00:25,496
-health problems, but much of my work is
-with chronic
-
-6
-00:00:25,580 --> 00:00:31,440
-conditions such as diabetes, hypertension,
-and obesity.
-
-7
-00:00:32,510 --> 00:00:34,190
+00:00:02,880 --> 00:00:04,880
 And it's a very busy clinic.
 
-8
-00:00:34,490 --> 00:00:40,150
+3
+00:00:05,240 --> 00:00:10,860
 I see around 80 patients a day and
 sometimes more than 90.
 
-9
-00:00:40,610 --> 00:00:47,526
+4
+00:00:11,300 --> 00:00:18,196
 So conversations about change are not
 separate intervention for
 
-10
-00:00:47,610 --> 00:00:53,156
-me. They are part of all -in -all clinical
+5
+00:00:18,280 --> 00:00:23,960
+me. They are part of ordinary clinical
 care every day.
 
+6
+00:00:24,880 --> 00:00:31,640
+So eating, activity, medication, sleep,
+stress, work,
+
+7
+00:00:31,940 --> 00:00:38,440
+and motivational intervention has become
+so important in my practice.
+
+8
+00:00:39,400 --> 00:00:46,076
+I first came across MI when I was working
+in diabetes and
+
+9
+00:00:46,160 --> 00:00:47,660
+metabolites department.
+
+10
+00:00:49,580 --> 00:00:54,180
+And I work in outpatient clinic at the
+university hospital.
+
 11
-00:00:53,240 --> 00:00:56,180
-So eating, activity,
+00:00:55,120 --> 00:01:01,630
+At that time, I thought that if patients
+did not change their lifestyle,
 
 12
-00:00:57,140 --> 00:01:04,040
-medication, sleep, stress, work, and
-motivational interviewing has
-
-13
-00:01:04,440 --> 00:01:07,800
-become so important in my practice.
-
-14
-00:01:08,060 --> 00:01:14,596
-I first came across MI when I was working
-in diabetes
-
-15
-00:01:14,680 --> 00:01:21,286
-and metabolic department, and I worked in
-outpatient
-
-16
-00:01:21,370 --> 00:01:23,246
-clinic at a university hospital.
-
-17
-00:01:23,330 --> 00:01:30,096
-At that time, I thought that if patients
-did not change their
-
-18
-00:01:30,180 --> 00:01:36,716
-lifestyle, maybe they simply did not have
-enough
-
-19
-00:01:36,800 --> 00:01:38,000
+00:01:02,700 --> 00:01:08,780
+maybe they simply did not have enough
 medical knowledge.
 
-20
-00:01:38,280 --> 00:01:41,760
+13
+00:01:09,520 --> 00:01:12,500
 So I tried very hard to explain.
 
-21
-00:01:42,280 --> 00:01:48,660
+14
+00:01:13,020 --> 00:01:18,780
 I talked about diabetes and its
-complications and risks, and
+complications and risks.
 
-22
-00:01:49,220 --> 00:01:51,296
-I asked many questions.
+15
+00:01:19,640 --> 00:01:22,080
+And I asked many questions.
 
-23
-00:01:51,380 --> 00:01:55,456
+16
+00:01:22,380 --> 00:01:26,200
 And also, I tried to listen very
 carefully, too.
 
-24
-00:01:55,540 --> 00:02:02,086
+17
+00:01:26,700 --> 00:01:33,340
 So from my point of view, I was, I
-supposed to be a good
+supposed to be a good doctor.
 
-25
-00:02:02,170 --> 00:02:09,070
-doctor, but sometimes I spent more than 30
-minutes with one patient.
+18
+00:01:33,940 --> 00:01:39,800
+But sometimes I spent more than 30 minutes
+with one patient.
 
-26
-00:02:09,530 --> 00:02:16,316
+19
+00:01:40,560 --> 00:01:47,106
 So even we often had good relationships,
 many people still
 
-27
-00:02:16,400 --> 00:02:21,720
-did not make changes and my clinics ran
-late.
+20
+00:01:47,190 --> 00:01:49,010
+did not make changes.
 
-28
-00:02:21,820 --> 00:02:25,036
+21
+00:01:49,930 --> 00:01:52,430
+And my clinics ran late.
+
+22
+00:01:53,760 --> 00:01:55,940
 Then I became exhausted.
 
+23
+00:01:56,790 --> 00:02:00,290
+So at that point, at some point, then
+
+24
+00:02:00,560 --> 00:02:06,770
+I started to think, maybe the problem is
+not the patient.
+
+25
+00:02:07,110 --> 00:02:10,550
+Maybe I need a better way to communicate.
+
+26
+00:02:10,890 --> 00:02:13,050
+So I need to change something.
+
+27
+00:02:13,290 --> 00:02:14,710
+I talk with my patients.
+
+28
+00:02:16,120 --> 00:02:23,010
+So I started to find communication method,
+which supports
+
 29
-00:02:25,120 --> 00:02:29,560
-So, at that point, at some point, then
+00:02:23,600 --> 00:02:26,780
+behavior change more efficiently and
+effectively.
+
+30
+00:02:28,140 --> 00:02:29,676
+And finally, I lot more on them.
+
+31
+00:02:29,760 --> 00:02:30,600
+So even my patients are doing a lot of
+things, I think, maybe the family

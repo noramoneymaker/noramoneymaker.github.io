@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free subtitle checker — SRT and WebVTT, in your browser — Nora Moneymaker</title>
+<meta name="description" content="Check an SRT or WebVTT caption file against the 42-character, 7-second, 0.84-second and 2-frame rules. Runs in the browser; the file is never uploaded. Free, no signup.">
+<link rel="canonical" href="https://noramoneymaker.github.io/checker.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Nora Moneymaker">
+<meta property="og:title" content="Free subtitle checker — SRT and WebVTT, in your browser — Nora Moneymaker">
+<meta property="og:description" content="Check an SRT or WebVTT caption file against the 42-character, 7-second, 0.84-second and 2-frame rules. Runs in the browser; the file is never uploaded. Free, no signup.">
+<meta property="og:url" content="https://noramoneymaker.github.io/checker.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free subtitle checker — SRT and WebVTT, in your browser — Nora Moneymaker">
+<meta name="twitter:description" content="Check an SRT or WebVTT caption file against the 42-character, 7-second, 0.84-second and 2-frame rules. Runs in the browser; the file is never uploaded. Free, no signup.">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://noramoneymaker.github.io/#org","name":"Nora Moneymaker","url":"https://noramoneymaker.github.io/","email":"noramoneymaker@proton.me","description":"Podcast transcription and subtitle files produced on one local machine with speaker labels, per-word confidence and a delivery spec, paid in USDC."},{"@type":"WebSite","@id":"https://noramoneymaker.github.io/#site","url":"https://noramoneymaker.github.io/","name":"Nora Moneymaker","publisher":{"@id":"https://noramoneymaker.github.io/#org"}},{"@type":"WebPage","@id":"https://noramoneymaker.github.io/checker.html#page","url":"https://noramoneymaker.github.io/checker.html","name":"Free subtitle checker \u2014 SRT and WebVTT, in your browser \u2014 Nora Moneymaker","description":"Check an SRT or WebVTT caption file against the 42-character, 7-second, 0.84-second and 2-frame rules. Runs in the browser; the file is never uploaded. Free, no signup.","isPartOf":{"@id":"https://noramoneymaker.github.io/#site"}}]}</script>
+<style>
+:root{--ink:#14161a;--dim:#5b6370;--line:#e3e6ea;--accent:#8a1c1c;--bg:#fbfbfa;--code:#f3f4f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:48px 24px 96px}
+h1{font-size:34px;line-height:1.15;margin:0 0 8px;letter-spacing:-.02em}
+h2{font-size:21px;margin:44px 0 10px;letter-spacing:-.01em}
+h3{font-size:16px;margin:26px 0 6px}
+p,li{color:#242830}
+.lede{font-size:19px;color:var(--dim);margin:0 0 28px}
+.tag{display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+ color:var(--accent);border:1px solid var(--accent);border-radius:3px;padding:2px 7px;margin-bottom:18px}
+table{width:100%;border-collapse:collapse;margin:14px 0 6px;font-size:15px}
+th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--dim);font-weight:600}
+td.n{white-space:nowrap;font-variant-numeric:tabular-nums}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px;
+ background:var(--code);padding:2px 5px;border-radius:3px;word-break:break-all}
+.addr{display:block;background:#111418;color:#e8eaed;padding:12px 14px;border-radius:5px;
+ font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;word-break:break-all;margin:6px 0 14px}
+.note{border-left:3px solid var(--line);padding:2px 0 2px 14px;color:var(--dim);font-size:15px;margin:18px 0}
+.card{border:1px solid var(--line);border-radius:6px;padding:18px 20px;margin:14px 0;background:#fff}
+.card h3{margin-top:0}
+.price{font-size:22px;font-weight:650;letter-spacing:-.01em}
+.price small{font-size:13px;font-weight:400;color:var(--dim)}
+a{color:var(--accent)}
+footer{margin-top:60px;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--dim)}
+pre{background:var(--code);padding:14px;border-radius:5px;overflow-x:auto;font-size:13px;line-height:1.5}
+ul{padding-left:20px}
+.k{font-weight:600}
+nav{font-size:14px;margin-bottom:30px}
+nav a{margin-right:16px;text-decoration:none}
+textarea{width:100%;font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+ padding:10px 12px;border:1px solid var(--line);border-radius:5px;background:#fff;resize:vertical}
+button{font:inherit;font-size:15px;padding:8px 16px;border-radius:5px;cursor:pointer;
+ border:1px solid var(--accent);background:var(--accent);color:#fff}
+button.ghost{background:#fff;color:var(--accent)}
+.dim{color:var(--dim);font-size:14px}
+.ok{color:#146c2e}
+.bad{color:var(--accent)}
+#out h2{margin-top:30px}
+</style></head>
+<body><div class="wrap">
+<nav><a href="/">Store</a><a href="/pricing.html">Pricing</a>
+<a href="/samples/">Samples</a><a href="/checker.html">Free checker</a>
+<a href="/accuracy.html">Accuracy</a><a href="/terms.html">Terms</a></nav>
+
+<h1>Free subtitle checker &mdash; SRT and WebVTT</h1>
+<p class="lead">Paste a caption file, or drop one in, and get the same compliance report the
+paid machine endpoint sells: cue count, characters per line, cue duration, the gap between
+cues, characters per second, and cue numbering. <strong>The file never leaves this page.</strong>
+There is no upload. The page is static HTML plus one script, so it also works with the network
+switched off once it has loaded &mdash; which is the point, since every other online caption
+validator uploads the file to somebody's server.</p>
+
+<h2>What it checks, and the exact thresholds</h2>
+<p>These are the Netflix-style caption rules that broadcasters, streamers and platforms
+reject on. They are the same six numbers the store's own delivery spec is measured against,
+read out of the same source file:</p>
+<table>
+<tr><th>Rule</th><th>Threshold</th><th>Counted as a violation when</th></tr>
+<tr><td>Cues per cue</td><td>2 lines max</td><td>a cue carries a third line</td></tr>
+<tr><td>Characters per line</td><td>42 max</td><td>any line in a cue is longer</td></tr>
+<tr><td>Cue duration</td><td>7.0 s max</td><td>a cue runs longer</td></tr>
+<tr><td>Cue duration</td><td>0.84 s min</td><td>a cue is shorter (readable-time floor)</td></tr>
+<tr><td>Gap between cues</td><td>0.084 s min</td><td>two cues sit closer than two frames at 24 fps</td></tr>
+<tr><td>Characters per second</td><td>20/s advisory</td><td>a cue exceeds it (reported, not counted)</td></tr>
+</table>
+<p>Overlapping or out-of-order cues and a broken numbering sequence are reported separately.
+A file that parses to zero cues is reported as an error rather than as clean &mdash; a checker
+that says "pass" on input it could not read is worse than no checker.</p>
+
+<h2>Check a file</h2>
+<div class="card">
+<p><label for="f">Open an .srt or .vtt file</label><br>
+<input id="f" type="file" accept=".srt,.vtt,text/plain,.txt"></p>
+<p>or paste the text:</p>
+<textarea id="t" rows="10" spellcheck="false" placeholder="1&#10;00:00:00,000 --&gt; 00:00:02,000&#10;The first cue."></textarea>
+<p><button id="go" type="button">Check it</button>
+<button id="demo" type="button" class="ghost">Load a file with one of each defect</button>
+<span id="status" class="dim"></span></p>
+</div>
+
+<div id="out"></div>
+
+<h2>When it flags something</h2>
+<p>Flagging is the cheap half. Rewrapping lines to 42 characters, re-timing cues to the 0.84 s
+floor and the 2-frame gap, and keeping the cue text byte-identical while doing it is the part
+that takes work &mdash; and it is exactly what a paid order returns: <code>episode.clean.srt</code>
+and <code>episode.vtt</code> built to this spec, with a compliance report scored by this same
+checker, at <strong>$0.40 per audio minute, $12 minimum</strong>. The transcript order at $0.60
+per minute also carries per-word speaker labels and a QA note naming every low-confidence word.
+<a href="/pricing.html">Prices and worked examples</a> &middot; <a href="/samples/">real files
+to download and re-check here</a>.</p>
+<p class="dim">The same checker is sold to software: <code>POST /v1/check-srt</code> with
+<code>{"srt": "&lt;text&gt;"}</code>, $0.02 per file, paid in USDC on Base or Solana, free
+sample at <code>/v1/check-srt/sample</code>.</p>
+<script>const DEMO = "1\n00:00:00,000 --> 00:00:09,500\nSPEAKER_01: This cue is too long, and it is also far too many characters to fit on a single broadcast line.\n\n2\n00:00:09,600 --> 00:00:09,900\nToo short.\n\n3\n00:00:09,950 --> 00:00:12,000\nThe gap before this cue is under two frames.";</script>
+<script type="module">
+import { checkSrt } from './x402-worker/worker.js';
+
+const $ = (id) => document.getElementById(id);
+const out = $('out');
+const status = $('status');
+
+function el(tag, text, cls) {
+  const n = document.createElement(tag);
+  if (text !== undefined && text !== null) n.textContent = String(text);
+  if (cls) n.className = cls;
+  return n;
+}
+
+function render(r) {
+  out.textContent = '';
+  const head = el('h2', r.clean ? 'Clean: 0 violations' : r.violation_total + ' violation' +
+    (r.violation_total === 1 ? '' : 's'));
+  head.className = r.clean ? 'ok' : 'bad';
+  out.appendChild(head);
+
+  const p = el('p');
+  p.appendChild(el('span', 'cues ' + r.cue_count + '  '));
+  p.appendChild(el('span', 'numbered ' + (r.sequence_ok ? 'in order' : 'OUT OF ORDER') + '  '));
+  p.appendChild(el('span', 'caption time ' + r.total_caption_seconds + ' s'));
+  out.appendChild(p);
+
+  const LABEL = {
+    lines: 'more than 2 lines in a cue',
+    chars_per_line: 'a line over 42 characters',
+    too_long: 'a cue longer than 7.0 s',
+    too_short: 'a cue shorter than 0.84 s',
+    gap: 'a gap under 2 frames (0.084 s)',
+    negative: 'a cue that ends before it starts',
+  };
+  const t = el('table');
+  const hr = el('tr');
+  hr.appendChild(el('th', 'rule'));
+  hr.appendChild(el('th', 'violations'));
+  t.appendChild(hr);
+  for (const k of Object.keys(r.violations)) {
+    const tr = el('tr');
+    tr.appendChild(el('td', LABEL[k] || k));
+    const td = el('td', r.violations[k]);
+    if (r.violations[k] > 0) td.className = 'bad';
+    tr.appendChild(td);
+    t.appendChild(tr);
+  }
+  out.appendChild(t);
+
+  if (r.cps_spikes && r.cps_spikes.length) {
+    out.appendChild(el('p', 'Fastest-reading cues (chars/second): ' +
+      r.cps_spikes.map((s) => 'cue ' + s.n + ' at ' + s.cps).join(', '), 'dim'));
+  }
+  if (r.errors && r.errors.length) {
+    const box = el('div', null, 'bad');
+    box.appendChild(el('p', 'Parser errors:'));
+    const ul = el('ul');
+    for (const e of r.errors) ul.appendChild(el('li', e));
+    box.appendChild(ul);
+    out.appendChild(box);
+  }
+}
+
+function run(text) {
+  if (!text || !text.trim()) { status.textContent = 'nothing to check'; return; }
+  try {
+    const r = checkSrt(text);
+    render(r);
+    status.textContent = text.length + ' characters read in this page';
+  } catch (e) {
+    out.textContent = '';
+    out.appendChild(el('p', 'checker failed: ' + (e && e.message ? e.message : e), 'bad'));
+  }
+}
+
+$('go').addEventListener('click', () => run($('t').value));
+
+$('demo').addEventListener('click', () => {
+  $('t').value = DEMO;
+  run(DEMO);
+});
+
+$('f').addEventListener('change', (ev) => {
+  const file = ev.target.files && ev.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => { $('t').value = String(reader.result); run(String(reader.result)); };
+  reader.readAsText(file);
+});
+</script>
+
+<footer>Nora Moneymaker &middot; <a href="mailto:noramoneymaker@proton.me">noramoneymaker@proton.me</a> &middot;
+one operator, one machine, no third-party upload &middot;
+prices and specs dated 2026-10-17 to 2026-11-19</footer>
+</div></body></html>

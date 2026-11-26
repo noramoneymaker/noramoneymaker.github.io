@@ -93,27 +93,55 @@ that says "pass" on input it could not read is worse than no checker.</p>
 <p>or paste the text:</p>
 <textarea id="t" rows="10" spellcheck="false" placeholder="1&#10;00:00:00,000 --&gt; 00:00:02,000&#10;The first cue."></textarea>
 <p><button id="go" type="button">Check it</button>
+<button id="fix" type="button">Fix it and download</button>
 <button id="demo" type="button" class="ghost">Load a file with one of each defect</button>
 <span id="status" class="dim"></span></p>
 </div>
 
 <div id="out"></div>
+<div id="fixout"></div>
 
-<h2>When it flags something</h2>
-<p>Flagging is the cheap half. Rewrapping lines to 42 characters, re-timing cues to the 0.84 s
-floor and the 2-frame gap, and keeping the cue text byte-identical while doing it is the part
-that takes work &mdash; and it is exactly what a paid order returns: <code>episode.clean.srt</code>
-and <code>episode.vtt</code> built to this spec, with a compliance report scored by this same
-checker, at <strong>$0.40 per audio minute, $12 minimum</strong>. The transcript order at $0.60
-per minute also carries per-word speaker labels and a QA note naming every low-confidence word.
-<a href="/pricing.html">Prices and worked examples</a> &middot; <a href="/samples/">real files
-to download and re-check here</a>.</p>
+<h2>Fix it here, free</h2>
+<p>Flagging is the cheap half. <strong>Fix it and download</strong> rewrites the file you loaded
+into one that scores clean against the same six numbers, and hands it back as <code>.srt</code>
+and <code>.vtt</code>. All of it happens in this page &mdash; nothing is uploaded, and the
+rewriter is scored by the same <code>checkSrt()</code> that the $0.02 endpoint sells, so the
+score you see is the score the file gets.</p>
+<p>It repairs, and counts what it repaired:</p>
+<ul>
+<li><strong>line breaks</strong> &mdash; rewrapped at word boundaries to 42 characters, two lines.
+A cue whose text needs more than two lines is <em>split into two cues</em> with its time divided
+between them, not truncated.</li>
+<li><strong>cue durations</strong> &mdash; clamped to the 7.0 s ceiling and floored at 0.84 s.</li>
+<li><strong>gaps</strong> &mdash; widened to the two-frame minimum, by shortening the previous
+cue's tail where it has slack and delaying the next start only where it does not.</li>
+<li><strong>numbering and order</strong> &mdash; renumbered from 1 and sorted by start time.</li>
+</ul>
+<p>It does <strong>not</strong> change a single word. Not one is added, cut or re-spelled &mdash;
+only the whitespace inside a cue moves. That is deliberate: a rewriter that quietly edits speech
+is a transcription tool, and this one is not pretending to be.</p>
+<p>Two things it will not repair, and names instead of hiding: a cue whose text cannot fit two
+lines inside the time it has (that needs retiming, which is an editorial decision) and reading
+speed over 20 characters a second (the only ways down are retiming or cutting words). Every cue
+it could not fix is listed under the file. A clean-looking file with a footnote nobody read is
+worse than an honest one.</p>
+
+<h2>What it cannot do: make the captions in the first place</h2>
+<p>The fixer repairs timing and line breaks in a file that already exists. If what you have is
+audio and no captions &mdash; or captions a machine produced that are wrong in the words rather
+than the timing &mdash; that is the paid order: <code>episode.clean.srt</code> and
+<code>episode.vtt</code> built to this spec from your audio, with a compliance report scored by
+this same checker, at <strong>$0.40 per audio minute, $12 minimum</strong>. The transcript order
+at $0.60 per minute also carries per-word speaker labels and a QA note naming every
+low-confidence word. <a href="/pricing.html">Prices and worked examples</a> &middot;
+<a href="/samples/">real files to download and re-check here</a>.</p>
 <p class="dim">The same checker is sold to software: <code>POST /v1/check-srt</code> with
 <code>{"srt": "&lt;text&gt;"}</code>, $0.02 per file, paid in USDC on Base or Solana, free
 sample at <code>/v1/check-srt/sample</code>.</p>
 <script>const DEMO = "1\n00:00:00,000 --> 00:00:09,500\nSPEAKER_01: This cue is too long, and it is also far too many characters to fit on a single broadcast line.\n\n2\n00:00:09,600 --> 00:00:09,900\nToo short.\n\n3\n00:00:09,950 --> 00:00:12,000\nThe gap before this cue is under two frames.";</script>
 <script type="module">
 import { checkSrt } from './x402-worker/worker.js';
+import { fixSrt } from './x402-worker/fix-srt.js';
 
 const $ = (id) => document.getElementById(id);
 const out = $('out');
@@ -190,6 +218,111 @@ function run(text) {
 
 $('go').addEventListener('click', () => run($('t').value));
 
+// ---------------------------------------------------------------------------
+// The fix half. Same rule source, same scorer, one page. The download is
+// produced entirely in memory: Blob + an object URL, revoked straight after.
+// ---------------------------------------------------------------------------
+const fixout = $('fixout');
+let baseName = 'captions';
+
+function download(name, text) {
+  const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => { URL.revokeObjectURL(url); a.remove(); }, 0);
+}
+
+const NOTE_TEXT = {
+  split: 'cues split so the text fits two lines',
+  trimmed: 'cues trimmed to the 7.0 s ceiling',
+  extended: 'short cues extended to the 0.84 s floor',
+  merged: 'short cues merged into the next',
+  gap: 'gaps widened to the two-frame minimum',
+  renumbered: 'cue numbering rebuilt from 1',
+  reordered: 'cues sorted by start time',
+};
+
+function renderFix(res) {
+  fixout.textContent = '';
+  const h = el('h2');
+  if (!res.srt) {
+    h.textContent = 'Nothing to fix';
+    h.className = 'bad';
+    fixout.appendChild(h);
+    fixout.appendChild(el('p', (res.residuals[0] && res.residuals[0].reason) ||
+      'the input did not parse as a caption file', 'bad'));
+    return;
+  }
+  const b = res.before.violation_total;
+  const a = res.after.violation_total;
+  h.textContent = b === 0 ? 'Already clean — nothing rewritten'
+    : 'Repaired: ' + b + ' violation' + (b === 1 ? '' : 's') + ' → ' + a;
+  h.className = a === 0 ? 'ok' : 'bad';
+  fixout.appendChild(h);
+
+  const p = el('p');
+  p.appendChild(el('span', 'cues ' + res.before.cue_count + ' → ' + res.after.cue_count + '  '));
+  p.appendChild(el('span', 'caption time ' + res.before.total_caption_seconds + ' s → ' +
+    res.after.total_caption_seconds + ' s'));
+  fixout.appendChild(p);
+
+  const kinds = Object.keys(res.notes || {});
+  if (kinds.length) {
+    const ul = el('ul');
+    for (const k of kinds) ul.appendChild(el('li', NOTE_TEXT[k] || k, ''));
+    // counts, so the sentence above is checkable
+    kinds.forEach((k, i) => { ul.children[i].textContent += ' — ' + res.notes[k]; });
+    fixout.appendChild(ul);
+  }
+
+  if (res.residuals && res.residuals.length) {
+    const box = el('div', null, 'bad');
+    box.appendChild(el('p', res.residuals.length + ' cue' + (res.residuals.length === 1 ? '' : 's') +
+      ' could not be repaired, and this is why:'));
+    const ul = el('ul');
+    for (const r of res.residuals) {
+      ul.appendChild(el('li', (r.start ? r.start + ' — ' : '') + r.reason));
+    }
+    box.appendChild(ul);
+    fixout.appendChild(box);
+  }
+
+  const row = el('p');
+  const btnSrt = el('button', 'Download .srt');
+  btnSrt.type = 'button';
+  btnSrt.addEventListener('click', () => download(baseName + '.clean.srt', res.srt));
+  const btnVtt = el('button', 'Download .vtt');
+  btnVtt.type = 'button';
+  btnVtt.className = 'ghost';
+  btnVtt.addEventListener('click', () => download(baseName + '.clean.vtt', res.vtt));
+  row.appendChild(btnSrt);
+  row.appendChild(document.createTextNode(' '));
+  row.appendChild(btnVtt);
+  fixout.appendChild(row);
+
+  fixout.appendChild(el('p', 'These are also the last cues the browser had — nothing was sent ' +
+    'anywhere to make them.', 'dim'));
+  fixout.scrollIntoView({ block: 'nearest' });
+}
+
+$('fix').addEventListener('click', () => {
+  const text = $('t').value;
+  if (!text || !text.trim()) { status.textContent = 'nothing to fix'; return; }
+  try {
+    const res = fixSrt(text);
+    render(res.before);
+    renderFix(res);
+    status.textContent = text.length + ' characters rewritten in this page';
+  } catch (e) {
+    fixout.textContent = '';
+    fixout.appendChild(el('p', 'the rewriter failed: ' + (e && e.message ? e.message : e), 'bad'));
+  }
+});
+
 $('demo').addEventListener('click', () => {
   $('t').value = DEMO;
   run(DEMO);
@@ -198,6 +331,7 @@ $('demo').addEventListener('click', () => {
 $('f').addEventListener('change', (ev) => {
   const file = ev.target.files && ev.target.files[0];
   if (!file) return;
+  baseName = String(file.name || 'captions').replace(/\.(srt|vtt|txt)$/i, '') || 'captions';
   const reader = new FileReader();
   reader.onload = () => { $('t').value = String(reader.result); run(String(reader.result)); };
   reader.readAsText(file);
@@ -206,5 +340,5 @@ $('f').addEventListener('change', (ev) => {
 
 <footer>Nora Moneymaker &middot; <a href="mailto:noramoneymaker@proton.me">noramoneymaker@proton.me</a> &middot;
 one operator, one machine, no third-party upload &middot;
-prices and specs dated 2026-10-17 to 2026-11-19</footer>
+prices and specs dated 2026-10-17 to 2026-11-26</footer>
 </div></body></html>

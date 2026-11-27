@@ -135,9 +135,12 @@ this same checker, at <strong>$0.40 per audio minute, $12 minimum</strong>. The 
 at $0.60 per minute also carries per-word speaker labels and a QA note naming every
 low-confidence word. <a href="/pricing.html">Prices and worked examples</a> &middot;
 <a href="/samples/">real files to download and re-check here</a>.</p>
-<p class="dim">The same checker is sold to software: <code>POST /v1/check-srt</code> with
-<code>{"srt": "&lt;text&gt;"}</code>, $0.02 per file, paid in USDC on Base or Solana, free
-sample at <code>/v1/check-srt/sample</code>.</p>
+<p class="dim">Both halves are sold to software, priced per file, paid in USDC on Base or Solana, no
+account and no key: <code>POST /v1/check-srt</code> with <code>{"srt": "&lt;text&gt;"}</code>
+returns the compliance report for <strong>$0.02</strong>; <code>POST /v1/fix-srt</code> returns
+the repaired <code>.srt</code> and <code>.vtt</code> for <strong>$0.05</strong>. Free samples of
+both run unpaid on the same code at <code>/v1/check-srt/sample</code> and
+<code>/v1/fix-srt/sample</code>.</p>
 <script>const DEMO = "1\n00:00:00,000 --> 00:00:09,500\nSPEAKER_01: This cue is too long, and it is also far too many characters to fit on a single broadcast line.\n\n2\n00:00:09,600 --> 00:00:09,900\nToo short.\n\n3\n00:00:09,950 --> 00:00:12,000\nThe gap before this cue is under two frames.";</script>
 <script type="module">
 import { checkSrt } from './x402-worker/worker.js';
